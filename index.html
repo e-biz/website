@@ -3,67 +3,155 @@
 <head>
   <meta charset="utf-8">
   <title>eBusiness Information</title>
-
-  <!-- Twitter bootstrap -->
-  <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" rel="stylesheet">
-  <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet">
   
   <!-- App css -->
+  <link href="css/bootstrap.min.css" rel="stylesheet"/>
   <link href="css/header.css" rel="stylesheet">
   <link href="css/footer.css" rel="stylesheet">
   <link href="css/app.css" rel="stylesheet"/>
+  <link href="css/content.css" rel="stylesheet"/>
+  <link href="css/navbar.css" rel="stylesheet"/>
 
   <!-- Fonts -->
   <link href='http://fonts.googleapis.com/css?family=Strait' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Petit+Formal+Script' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Oxygen&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
+
 </head>
-<body>
+<body data-spy="scroll">
 
   <div class="container">
 
     <!-- Header
     ================================================== -->
+
     <header>
       <div class="header-bg"></div>
+      <div class="header-bg-shadow-start transition-color"></div>
+
+      <!-- Top strip -->
       <div class="header-top-strip">
         <div class="header-top-strip-content">
 
-          <iframe src="http://ghbtns.com/github-btn.html?user=excilys&type=follow"
+          <!-- Excilys -->
+          <div class="header-top-strip-content-left">
+              <img src="./img/excilys.png" alt="" class="excilys-logo"/>
+          </div> 
+
+          <div class="header-top-strip-content-left member-of-excilys">
+              Membre du groupe <font class="hand">excilys</font>
+          </div>
+
+          <!-- Social -->
+          <div class="header-top-strip-content-right">
+             <iframe src="http://ghbtns.com/github-btn.html?user=excilys&type=follow"
   allowtransparency="true" frameborder="0" scrolling="0" width="132" height="20"></iframe>
-          <a href="https://twitter.com/excilys" class="twitter-follow-button" data-lang="en">Tweet</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+              <a href="https://twitter.com/excilys" class="twitter-follow-button" data-lang="en">Tweet</a>
+              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          </div>
         
         </div>
       </div>
-      <div class="content">
+
+      <!-- Light effect below top strip -->
+      <div class="header-light-effect">
+        <div class="header-hr"></div>        
+      </div>
+
+      <!-- Header main content -->
+      <div class="header-content">
         <div class="centered">
           <div class="text">
-            <img src="./img/symbole.png" alt="" />
+            <img src="./img/ebusiness.png" alt="" class="ebusiness-logo " />
             <div class="ebiz">eBusiness Information</div>
             <div class="ebiz-description">Centré sur l'<font class="hand">excellence</font> des compétences et des prestations</div>
           </div>
         </div>
+
+        <!-- Navbar in document -->
+        <div class="header-fg"></div>
+        <div class="flow-navbar">
+          <div class="navbar">
+            <div class="navbar-inner">
+              <div class="nav-collapse collapse">
+                <ul class="nav">
+                  <li class=""><a href="#anchor-top">Accueil</a></li>
+                  <li class=""><a href="#anchor-projects">Projets</a></li>
+                  <li class=""><a href="#anchor-contact">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Floating navbar -->
+        <div class="fixed-navbar">
+          <div class="navbar">
+            <div class="navbar-inner">
+              <div class="nav-collapse collapse">
+                <ul class="nav">
+                  <li class=""><a href="#anchor-top">Accueil</a></li>
+                  <li class=""><a href="#anchor-projects">Projets</a></li>
+                  <li class=""><a href="#anchor-contact">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+
     </header>
 
+
     <content>
-      Contenu Contenu Contenu ContenuC
+
+
+      <div id="anchor-top" style="width:0px; height:0px;"></div>
+      <h1>
+        Home
+      </h1>
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />d
+
+      <hr class="divider" id="anchor-projects">      
+      <h1>
+        Projects
+      </h1>
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />d
+      
+
+      <hr class="divider" id="anchor-contact">
+      <h1>
+        Contacts
+      </h1>
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />d
     </content>
+
     
-    <div class="clearfooter"></div>
+    <div class="clearfooter">
+      <!-- Forces the footer to display below the content -->
+    </div>
+
   </div>
 
     <footer>
       Footer Footer Footer Footer
     </footer>
 
-    
+
+    <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>    
+    <script src="js/bootstrap.min.js"></script>  
     <script src="lib/angular/angular.js"></script>
+    
+    <!-- Angular.js -->
     <script src="js/app.js"></script>
     <script src="js/services.js"></script>
     <script src="js/controllers.js"></script>
     <script src="js/filters.js"></script>
     <script src="js/directives.js"></script>
+
+    <!-- Basic jQuery -->
+    <script src="js/jquery/navbar.js"></script>
+    <script src="js/jquery/presentation.js"></script> <!-- Must be last -->
 </body>
 </html> 

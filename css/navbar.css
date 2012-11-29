@@ -1,0 +1,37 @@
+.flow-navbar {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+}
+
+.fixed-navbar {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 10;
+}
+.navbar-inner {
+	min-height: 50px;
+}
+
+.navbar-inner li {
+	line-height: 30px;
+}
+
+/* Override twitter bootstrap */
+
+.navbar {
+	margin-bottom: 0px;
+}
+
+.navbar-inner {
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+}
+
+.navbar .nav {
+	width: 100%;
+	max-width: 500px;
+	margin: 0px auto;
+}
