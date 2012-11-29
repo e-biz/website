@@ -2,21 +2,17 @@ $(function() {
 
 	/** Some basic effets on load */
 
-	$(".header-bg-shadow-start").delay(500).queue(function(next){
-		$(this).addClass('header-bg-shadow');
-		next();
-	});
+	$(".header-bg-shadow-start").addClass('header-bg-shadow');
 
 	var delay = 1000;
-	$(".ebusiness-logo").hide().delay(delay).fadeIn('slow');
+	$(".ebusiness-logo").delay(delay).fadeIn('slow');
 
 	delay += 300;
-	$(".ebiz").hide().delay(delay).fadeIn('slow');
-	$(".flow-navbar").hide().delay(delay).fadeIn('slow');
+	$(".ebiz").delay(delay).fadeIn('slow');
 
 	// Top strip
-	$(".header-light-effect").hide();
-	$(".header-top-strip").hide().delay(delay).slideDown('slow').queue(function(){
+	$(".header-light-effect");
+	$(".header-top-strip").delay(delay).slideDown('slow').queue(function(){
 		$(".header-light-effect").fadeIn();
 	});
 

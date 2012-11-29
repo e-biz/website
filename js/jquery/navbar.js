@@ -10,7 +10,6 @@ $(function() {
 
  	console.log(navbarLimit);
 	var adjustNavbar = function(){
-		console.log('adjustNavbar');
 		if (body.scrollTop() > navbarLimit){
 			// Set visible
 			navbar.show();
