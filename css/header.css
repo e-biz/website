@@ -6,11 +6,11 @@ header {
 	
 }
 
-.header-fg {
+.header-bottom-strip {
 	position: absolute;
 	width: 100%;
-	bottom: 0px;
-	height: 65px;
+	bottom: 50px;
+	height: 15px;
 	background-color: rgba(255, 255, 255, 0.1);
 }
 
