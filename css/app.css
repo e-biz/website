@@ -11,6 +11,8 @@ body, html {
   width: 100%;
   position: relative;
   margin-bottom: -200px;
+  background: white url('../img/bg.jpg') center center;
+  background-repeat: repeat;
 }
 
 .clearfooter {

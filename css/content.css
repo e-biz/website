@@ -1,4 +1,18 @@
 
 .divider {
-    margin: 50px 0; /* Space out the Bootstrap <hr> more */
+    margin: 50px 0;
+	border-top: 1px solid #DDD;
+}
+
+content {
+	width: 100%;
+	max-width: 1140px;
+	margin: 0px auto;
+	display: block;
+}
+
+h1 {
+	text-shadow: 1px 1px 0px white;
+	font-family: "Droid Sans" ;
+	color: #666;
 }

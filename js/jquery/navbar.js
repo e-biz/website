@@ -8,7 +8,6 @@ $(function() {
  	var navbar = $(".fixed-navbar");
  	var body = $("body");
 
- 	console.log(navbarLimit);
 	var adjustNavbar = function(){
 		if (body.scrollTop() > navbarLimit){
 			// Set visible
