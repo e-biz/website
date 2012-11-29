@@ -1,8 +1,6 @@
 
 $(function() {
 
-	$('.navbar').scrollspy();
-
  	/** Manage the navbar */
  	var navbarLimit = $(".flow-navbar").offset().top;
  	var navbar = $(".fixed-navbar");

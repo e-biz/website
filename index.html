@@ -1,160 +1,194 @@
 <!doctype html>
 <html lang="en" ng-app="myApp">
-<head>
-  <meta charset="utf-8">
-  <title>eBusiness Information</title>
-  
-  <!-- App css -->
-  <link href="css/bootstrap.min.css" rel="stylesheet"/>
-  <link href="css/header.css" rel="stylesheet">
-  <link href="css/footer.css" rel="stylesheet">
-  <link href="css/app.css" rel="stylesheet"/>
-  <link href="css/content.css" rel="stylesheet"/>
-  <link href="css/navbar.css" rel="stylesheet"/>
-
-  <!-- Fonts -->
-  <link href='http://fonts.googleapis.com/css?family=Strait' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Petit+Formal+Script' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Oxygen&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
-
-</head>
-<body data-spy="scroll">
-
-  <div class="container">
-
-    <!-- Header
-    ================================================== -->
-
-    <header>
-      <div class="header-bg"></div>
-      <div class="header-bg-shadow-start transition-color"></div>
-
-      <!-- Top strip -->
-      <div class="header-top-strip" style="display: none;">
-        <div class="header-top-strip-content">
-
-          <!-- Excilys -->
-          <div class="header-top-strip-content-left">
-              <img src="./img/excilys.png" alt="" class="excilys-logo"/>
-          </div> 
-
-          <div class="header-top-strip-content-left member-of-excilys">
-              Membre du groupe <font class="hand">excilys</font>
-          </div>
-
-          <!-- Social -->
-          <div class="header-top-strip-content-right">
-             <iframe src="http://ghbtns.com/github-btn.html?user=excilys&type=follow"
-  allowtransparency="true" frameborder="0" scrolling="0" width="132" height="20"></iframe>
-              <a href="https://twitter.com/excilys" class="twitter-follow-button" data-lang="en">Tweet</a>
-              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-          </div>
-        
-        </div>
-      </div>
-
-      <!-- Light effect below top strip -->
-      <div class="header-light-effect" style="display: none;">
-        <div class="header-hr"></div>        
-      </div>
-
-      <!-- Header main content -->
-      <div class="header-content">
-        <div class="centered">
-          <div class="text">
-            <img src="./img/ebusiness.png" alt="" class="ebusiness-logo " style="display: none"/>
-            <div class="ebiz" style="display: none">eBusiness Information</div>
-            <div class="ebiz-description" style="display: none">Centré sur l'<font class="hand">excellence</font> des compétences et des prestations</div>
-          </div>
-        </div>
-
-        <!-- Navbar in document -->
-        <div class="header-bottom-strip"></div>
-        <div class="flow-navbar">
-          <div class="navbar">
-            <div class="navbar-inner">
-              <div class="nav-collapse collapse">
-                <ul class="nav">
-                  <li class=""><a href="#anchor-top">Nos projets</a></li><li class=""><a href="#anchor-principles">Nos principes</a></li><li class=""><a href="#anchor-contact">Contact</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Floating navbar -->
-        <div class="fixed-navbar" style="display: none;">
-          <div class="navbar">
-            <div class="navbar-inner">
-              <div class="nav-collapse collapse">
-                <ul class="nav">
-                  <li class=""><a href="#anchor-top">Nos projets</a></li><li class=""><a href="#anchor-principles">Nos principes</a></li><li class=""><a href="#anchor-contact">Contact</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </header>
-
-
-    <content>
-
-
-      <div id="anchor-top" style="width:0px; height:0px;"></div>
-
-      <div class="featurette">
-        <img class="featurette-image pull-right" src="./img/androidannotations.png">
-        <h2 class="featurette-heading">Android Annotations. <span class="muted">Développez rapidement, maintenez facilement.</span></h2>
-        <p class="lead">AndroidAnnotations est un framework Open Source visant à simplifier et industrialiser les développements Android, sans impacter les performances.</p>
-      </div>
-
-      <hr class="divider">    
-
-       <div class="featurette">
-        <img class="featurette-image pull-left" src="./img/gatling.png">
-        <h2 class="featurette-heading">Gatling Tool. <span class="muted">Stress-testez vos applications web.</span></h2>
-        <p class="lead">Gatling est une solution de test haute performance permettant de simuler un grand nombre de clients tout en consommant peu de ressources. Il est Open Source.</p>
-      </div>
-
-      <hr class="divider">    
-
-       <div class="featurette">
-        <img class="featurette-image pull-right" src="./img/android4business.png">
-        <h2 class="featurette-heading">Android for Business. <span class="muted">Le bookmark indispensable du développeur Android.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-      </div>
-
-      <hr class="divider" id="anchor-principles">      
-      <h1>
-        Nos principes
-      </h1>
-      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-      
-
-      <hr class="divider" id="anchor-contact">
-      <h1>
-        Contact
-      </h1>
-      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-    </content>
-
+  <head>
+    <meta charset="utf-8">
+    <title>eBusiness Information</title>
     
-    <div class="clearfooter">
-      <!-- Forces the footer to display below the content -->
+    <!-- App css -->
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/header.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet"/>
+    <link href="css/content.css" rel="stylesheet"/>
+    <link href="css/navbar.css" rel="stylesheet"/>
+
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Strait' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Petit+Formal+Script' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oxygen&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Pontano+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Coming+Soon' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body data-spy="scroll"  data-target=".navbar" data-offset="100">
+
+    <div class="container">
+
+      <!-- Header
+      ================================================== -->
+
+      <header>
+        <div class="header-bg"></div>
+        <div class="header-bg-shadow-start transition-color"></div>
+
+        <!-- Top strip -->
+        <div class="header-top-strip" style="display: none;">
+          <div class="header-top-strip-content">
+
+            <!-- Excilys -->
+            <div class="header-top-strip-content-left">
+                <img src="./img/excilys.png" alt="" class="excilys-logo"/>
+            </div> 
+
+            <div class="header-top-strip-content-left member-of-excilys">
+                Membre du groupe <font class="hand">excilys</font>
+            </div>
+
+            <!-- Social -->
+            <div class="header-top-strip-content-right">
+               <iframe src="http://ghbtns.com/github-btn.html?user=excilys&type=follow"
+    allowtransparency="true" frameborder="0" scrolling="0" width="132" height="20"></iframe>
+                <a href="https://twitter.com/excilys" class="twitter-follow-button" data-lang="en">Tweet</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            </div>
+          
+          </div>
+        </div>
+
+        <!-- Light effect below top strip -->
+        <div class="header-light-effect" style="display: none;">
+          <div class="header-hr"></div>        
+        </div>
+
+        <!-- Header main content -->
+        <div class="header-content">
+          <div class="centered">
+            <div class="text">
+              <img src="./img/ebusiness.png" alt="" class="ebusiness-logo " style="display: none"/>
+              <div class="ebiz" style="display: none">eBusiness Information</div>
+              <div class="ebiz-description" style="display: none">Centré sur l'<font class="hand">excellence</font> des compétences et des prestations</div>
+            </div>
+          </div>
+
+          <!-- Navbar in document -->
+          <div class="header-bottom-strip"></div>
+          <div class="flow-navbar">
+            <div class="navbar">
+              <div class="navbar-inner">
+                <div class="nav-collapse collapse">
+                  <ul class="nav">
+                    <li class=""><a href="#anchor-top">Nos projets</a></li><li class=""><a href="#anchor-principles">Nos principes</a></li><li class=""><a href="#anchor-newsletter">Lettres d'information</a></li><li class=""><a href="#anchor-contact">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Floating navbar -->
+          <div class="fixed-navbar" style="display: none;">
+            <div class="navbar">
+              <div class="navbar-inner">
+                <div class="nav-collapse collapse">
+                  <ul class="nav">
+                    <li class=""><a href="#anchor-top">Nos projets</a></li><li class=""><a href="#anchor-principles">Nos principes</a></li><li class=""><a href="#anchor-newsletter">Lettres d'information</a></li><li class=""><a href="#anchor-contact">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+
+        <content>
+
+         <div id="anchor-top" style="width:0px; height:0px;"></div>
+          <div class="featurette">
+            <img class="featurette-image pull-right" src="./img/androidannotations.png">
+            <h2 class="featurette-heading">Android Annotations. <span class="muted">Développez rapidement, maintenez facilement.</span></h2>
+            <p class="lead">AndroidAnnotations est un framework Open Source visant à simplifier et industrialiser les développements Android, sans impacter les performances.</p>
+          </div>
+
+          <hr class="divider">    
+
+           <div class="featurette">
+            <img class="featurette-image pull-left" src="./img/gatling.png">
+            <h2 class="featurette-heading">Gatling Tool. <span class="muted">Stress-testez vos applications web.</span></h2>
+            <p class="lead">Gatling est une solution de test haute performance permettant de simuler un grand nombre de clients tout en consommant peu de ressources. Il est Open Source.</p>
+          </div>
+
+          <hr class="divider">    
+
+           <div class="featurette">
+            <img class="featurette-image pull-right" src="./img/android4business.png">
+            <h2 class="featurette-heading">Android for Business. <span class="muted">Le bookmark indispensable du développeur Android.</span></h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          </div>
+
+          <hr class="divider" id="anchor-principles">      
+          <h1>
+            Nos principes
+          </h1>
+          <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+          
+
+          <hr class="divider" id="anchor-newsletter">
+          <h1>
+            Lettre d'information 
+          </h1>
+          <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      
+          <hr class="divider" id="anchor-contact">
+          <h1>
+            Contact
+          </h1>
+          <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      
+      </content>
+
+      
+      <div class="clearfooter">
+        <!-- Forces the footer to display below the content -->
+      </div>
+
     </div>
 
-  </div>
+    <div class="footer">
+      <div class="footer-bg"></div>
 
-    <footer>
-      Adresse postale et mail de contact, lien direct vers les stages, lien vers blog, lien vers labs, lien vers excilys.com, mentions légales, copyright
-    </footer>
+      <!-- Light effect on top -->
+      <div class="footer-light-effect"></div>
+
+      <div class="footer-column">
+        <div class="phone">Adresse</div><br />
+        eBusiness Information<br />
+        45-47 avenue Carnot<br />
+        94230 Cachan<br /><br />
+
+        <div class="phone">Tél</div> +33 (0) 1 41 24 43 20 <br />
+        <div class="phone">Fax</div> +33 (0) 1 41 24 43 21 <br />
+
+      </div>
+
+
+      <div class="footer-column">
+        <div class="phone">Liens</div><br />
+        Consulter les offres de stages<br />
+        Blog Excilys<br />
+        Excilys Labs<br />
+        excilys.com<br /><br />
+        Mentions Légales - ©2012 Joan Zapata 
+      </div>
+
+
+      <!-- Adresse postale et mail de contact, lien direct vers les stages, lien vers blog, lien vers labs, lien vers excilys.com, mentions légales, copyright -->
+    </div>
 
 
     <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>    
-    <script src="js/bootstrap.min.js"></script>  
+    <script src="js/bootstrap-scrollspy.js"></script>  
     <script src="lib/angular/angular.js"></script>
     
     <!-- Angular.js -->
@@ -167,5 +201,5 @@
     <!-- Basic jQuery -->
     <script src="js/jquery/navbar.js"></script>
     <script src="js/jquery/presentation.js"></script> <!-- Must be last -->
-</body>
+  </body>
 </html> 
