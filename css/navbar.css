@@ -31,14 +31,11 @@
 	border-radius: 0px;
 	border: none;
 	text-align: center;
-	background: rgba(255, 255, 255, 0.1);
+	background: white;
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
 	box-shadow: none;
-}
-
-.fixed-navbar .navbar-inner {
-	background-color: rgba(0, 0, 0, 0.8);
+	border-bottom: 5px solid rgba(41, 169, 223, 0.2);
 }
 
 .navbar .nav {
@@ -53,28 +50,30 @@
 /* Not focused not active navbar item */
 .navbar .nav > li > a {
 	text-shadow: none;
-	color: #ddd;
+	color: #666;
+	padding: 15px 20px;
 	font-size: 1.2em;
 	transition: all 500ms;
 	-moz-transition: all 500ms;
 	-webkit-transition: all 500ms;
 	-o-transition: all 500ms;
-	border-bottom: none;
+	border-bottom: 5px solid transparent;
+	margin-bottom: -5px;
 }
 
 .navbar .nav > li > a:hover {
-	color: #fff;
+	color: white;
+	background: #29a9df;
+	border-bottom: 5px solid #29a9df;
 }
 
 /* Active navbar item */
 .navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
-	background: white url('../img/bg.jpg') center center;
-	background-repeat: repeat;
+	background: white;
 	cursor: default;
-	-webkit-border-top-left-radius: 4px;
-	-webkit-border-top-right-radius: 4px;
-	-moz-border-radius-topleft: 4px;
-	-moz-border-radius-topright: 4px;
-	border-top-left-radius: 4px;
-	border-top-right-radius: 4px;
+	border-bottom: 5px solid #29a9df;
+	color: #29a9df;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
 }
