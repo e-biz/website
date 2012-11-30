@@ -1,5 +1,8 @@
-
 $(function() {
+
+	function goToByScroll(id){
+		$('html,body').animate({scrollTop: $(id).offset().top}, 400);
+	}
 
  	/** Manage the navbar */
  	var navbarLimit = $(".flow-navbar").offset().top;
@@ -20,10 +23,12 @@ $(function() {
 
 	// Using delegate insure it will be executed
 	// *after* the event is processed by the browser
-	$(document).delegate('.navbar a', 'click', function(e) {	    
-	    $('[data-spy="scroll"]').each(function () {
+	$(document).delegate('.navbar a', 'click', function(e) {
+		goToByScroll($(this).attr("href"));
+		$('[data-spy="scroll"]').each(function () {
 		  var $spy = $(this).scrollspy('refresh')
 		});
+		e.preventDefault();
 	});
 
 
