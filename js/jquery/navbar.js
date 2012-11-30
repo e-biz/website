@@ -25,12 +25,11 @@ $(function() {
 	});
 	
 	function goToByScroll(id){
-		$('html,body').animate({scrollTop: $(id).offset().top}, 400, function(next){
+		$('html,body').animate({scrollTop: $(id).offset().top}, 400, function(){
 			adjustNavbar();
 			$('[data-spy="scroll"]').each(function () {
 				var $spy = $(this).scrollspy('refresh');
 			});
-			next();
 		});
 	}
 
