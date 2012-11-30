@@ -25,7 +25,7 @@ $(function() {
 	});
 	
 	function goToByScroll(id){
-		$('html,body').animate({scrollTop: $(id).offset().top}, 400).queue(function(next){
+		$('html,body').animate({scrollTop: $(id).offset().top}, 400, function(next){
 			adjustNavbar();
 			$('[data-spy="scroll"]').each(function () {
 				var $spy = $(this).scrollspy('refresh');
