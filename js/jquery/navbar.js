@@ -1,9 +1,5 @@
 $(function() {
 
-	function goToByScroll(id){
-		$('html,body').animate({scrollTop: $(id).offset().top}, 400);
-	}
-
  	/** Manage the navbar */
  	var navbarLimit = $(".flow-navbar").offset().top;
  	var navbar = $(".fixed-navbar");
@@ -25,11 +21,18 @@ $(function() {
 	// *after* the event is processed by the browser
 	$(document).delegate('.navbar a', 'click', function(e) {
 		goToByScroll($(this).attr("href"));
-		$('[data-spy="scroll"]').each(function () {
-		  var $spy = $(this).scrollspy('refresh')
-		});
 		e.preventDefault();
 	});
+	
+	function goToByScroll(id){
+		$('html,body').animate({scrollTop: $(id).offset().top}, 400).queue(function(next){
+			adjustNavbar();
+			$('[data-spy="scroll"]').each(function () {
+				var $spy = $(this).scrollspy('refresh');
+			});
+			next();
+		});
+	}
 
 
 });
