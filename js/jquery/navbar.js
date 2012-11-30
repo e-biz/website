@@ -1,4 +1,3 @@
-
 $(function() {
 
  	/** Manage the navbar */
@@ -20,11 +19,20 @@ $(function() {
 
 	// Using delegate insure it will be executed
 	// *after* the event is processed by the browser
-	$(document).delegate('.navbar a', 'click', function(e) {	    
-	    $('[data-spy="scroll"]').each(function () {
-		  var $spy = $(this).scrollspy('refresh')
-		});
+	$(document).delegate('.navbar a', 'click', function(e) {
+		goToByScroll($(this).attr("href"));
+		e.preventDefault();
 	});
+	
+	function goToByScroll(id){
+		var offset = $(id).offset().top - 20;
+		$('html,body').animate({scrollTop: offset}, 400, function(){
+			adjustNavbar();
+			$('[data-spy="scroll"]').each(function () {
+				var $spy = $(this).scrollspy('refresh');
+			});
+		});
+	}
 
 
 });
