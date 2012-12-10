@@ -14,7 +14,8 @@ $(function() {
 			navbar.hide();
 		}
 	};
-	$("body").bind("mousewheel scroll", adjustNavbar);
+
+	$(window).scroll(adjustNavbar);
 	adjustNavbar();
 
 	// Using delegate insure it will be executed
