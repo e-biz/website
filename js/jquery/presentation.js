@@ -23,4 +23,16 @@ $(function() {
 	delay += 100;
 	$(".header-top-strip-content-left").hide().delay(delay).fadeIn(speed);
 	
+
+
+	/** Message box gets bigger on focus */
+
+	$("#mail-content").focus(function(){
+		$(this).attr("rows", 6);
+	})
+
+	$("#mail-content").focusout(function(){
+		$(this).attr("rows", 0);
+	});
+
  });
