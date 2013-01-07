@@ -1,3 +1,11 @@
+.navbar-top {
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	cursor: pointer;
+	z-index: 15;
+}
+
 .flow-navbar {
 	position: absolute;
 	bottom: 0px;
@@ -5,7 +13,6 @@
 }
 
 .fixed-navbar {
-	width: 100%;
 	position: fixed;
 	top: 0;
 	z-index: 10;

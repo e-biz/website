@@ -1,17 +1,20 @@
 $(function() {
 
  	/** Manage the navbar */
- 	var navbarLimit = $(".flow-navbar").offset().top;
- 	var navbar = $(".fixed-navbar");
+ 	var navbar = $(".flow-navbar");
+ 	var navbarLimit = $(".header-content").height() - $(".flow-navbar").height();
+ 	var navbarTop = $(".navbar-top");
  	var body = $("body");
 
 	var adjustNavbar = function(){
 		if (body.scrollTop() > navbarLimit){
 			// Set visible
-			navbar.show();
+			navbar.addClass("fixed-navbar");
+			navbarTop.show();
 		} else {
 			// Set invisible 
-			navbar.hide();
+			navbar.removeClass("fixed-navbar");
+			navbarTop.hide();
 		}
 	};
 
@@ -35,5 +38,8 @@ $(function() {
 		});
 	}
 
+	$(".navbar-top").click(function(){
+		$('html,body').animate({scrollTop: 0}, 400, function(){});
+	})
 
 });
