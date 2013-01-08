@@ -1,10 +1,14 @@
 .navbar-top {
 	position: absolute;
 	right: 20px;
-	top: 20px;
+	top: 0px;
 	cursor: pointer;
 	z-index: 15;
+	height: 65px;
+	padding-top: 20px;
+	padding-left: 35px;
 }
+
 
 .flow-navbar {
 	position: absolute;
