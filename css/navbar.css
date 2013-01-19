@@ -16,6 +16,7 @@
 	position: fixed;
 	top: 0;
 	z-index: 10;
+	left: -1px;
 }
 
 .navbar-inner {

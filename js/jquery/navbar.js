@@ -4,10 +4,11 @@ $(function() {
  	var navbar = $(".flow-navbar");
  	var navbarLimit = $(".header-content").height() - $(".flow-navbar").height();
  	var navbarTop = $(".navbar-top");
- 	var body = $("body");
 
 	var adjustNavbar = function(){
-		if (body.scrollTop() > navbarLimit){
+
+		var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+		if (scrollTop > navbarLimit){
 			// Set visible
 			navbar.addClass("fixed-navbar");
 			navbarTop.show();

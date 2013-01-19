@@ -1,7 +1,7 @@
 $(function() {
 
 	/** Some basic effets on load */
-
+	
 	$(".header-bg-shadow-start").addClass('header-bg-shadow');
 
 	var speed = 300;
