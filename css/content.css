@@ -62,21 +62,9 @@ content p {
   -o-transition: all 200ms ease-in-out; /* Opera */
 }
 
-.featurette:hover {
-  zoom: 1.01; 
-}
- 
-.featurette:hover .featurette-image.pull-right {
-  right: 20px;
-}
-.featurette:hover .featurette-image.pull-left {
-  left: 20px;
-}
-
 .featurette .link {
   color: #888;
 }
-
 
 
 /* Internship
