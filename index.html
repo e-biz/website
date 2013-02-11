@@ -1,8 +1,8 @@
 <!doctype html>
-<html lang="en" ng-app="myApp">
+<html lang="en" ng-app="ebizApp">
   <head>
     <meta charset="utf-8">
-    <title>eBusiness Information</title>
+    <title>eBiz</title>
     
     <!-- App css -->
     <link href="css/bootstrap.min.css" rel="stylesheet"/>
@@ -13,13 +13,7 @@
     <link href="css/navbar.css" rel="stylesheet"/>
 
     <!-- Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Strait' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Petit+Formal+Script' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Oxygen&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Pontano+Sans' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Coming+Soon' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
 
     <link href="./img/favicon.png" rel="icon" type="image/png" />
   </head>
@@ -68,8 +62,8 @@
         <div class="header-content">
           <div class="centered">
             <div class="text">
+              <div class="ebiz" style="display: none">eBi<span class="biz">z</span></div>
               <img src="./img/ebusiness.png" alt="" class="ebusiness-logo " style="display: none"/>
-              <div class="ebiz" style="display: none">eBusiness Information</div>
               <div class="ebiz-description" style="display: none">Centré sur l'<font class="hand">excellence</font> des compétences et des prestations</div>
             </div>
           </div>
@@ -82,7 +76,7 @@
               <div class="navbar-inner">
                 <div class="nav-collapse collapse">
                   <ul class="nav">
-                    <li class=""><a href="#anchor-top">Nos projets</a></li><li class=""><a href="#anchor-principles">Nos principes</a></li><li class=""><a href="#anchor-newsletter">Lettres d'information</a></li><li class=""><a href="#anchor-contact">Contact</a></li>
+                    <li class=""><a href="#anchor-top">Nos projets</a></li><li class=""><a href="#anchor-adn">Notre ADN</a></li><li class=""><a href="#anchor-pitch">Pitch</a></li><li class=""><a href="#anchor-join">Nous rejoindre</a></li><li class=""><a href="#anchor-internship">Stages</a></li>
                   </ul>
                 </div>
               </div>
@@ -91,50 +85,97 @@
         </div>
       </header>
 
-
-        <content>
+        <content ng-controller="Links">
 
          <div id="anchor-top" style="width:0px; height:0px;"></div>
-          <div class="featurette">
+          <div class="featurette"  ng-click="redirect('http://androidannotations.org/')">
             <img class="featurette-image pull-right" src="./img/androidannotations.png">
             <h2 class="featurette-heading">Android Annotations. <span class="muted">Développez rapidement, maintenez facilement.</span></h2>
             <p class="lead">AndroidAnnotations est un framework Open Source visant à simplifier et industrialiser les développements Android, sans impacter les performances.</p>
+            <p class="link">androidannotations.org</p>
           </div>
 
           <hr class="divider">    
 
-           <div class="featurette">
+           <div class="featurette" ng-click="redirect('http://gatling-tool.org')">
             <img class="featurette-image pull-left" src="./img/gatling.png">
             <h2 class="featurette-heading">Gatling Tool. <span class="muted">Stress-testez vos applications web.</span></h2>
             <p class="lead">Gatling est une solution de test haute performance permettant de simuler un grand nombre de clients tout en consommant peu de ressources. Il est Open Source.</p>
+            <p class="link">gatling-tool.org</p>
           </div>
 
           <hr class="divider">    
 
-           <div class="featurette">
+           <div class="featurette" ng-click="redirect('http://android-business.com')">
             <img class="featurette-image pull-right" src="./img/android4business.png">
             <h2 class="featurette-heading">Android for Business. <span class="muted">Le bookmark indispensable du développeur Android.</span></h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <p class="lead">Non, A4B n’est pas un énième blog pour les Geeks et les Gamers, mais un blog spécialiste d’Android au service de l’innovation dans l’entreprise.</p>
+            <p class="link">android-business.com</p>
           </div>
 
-          <hr class="divider" id="anchor-principles">      
+          <hr class="divider" id="anchor-adn">      
           <h1>
-            Nos principes
+            Notre ADN
           </h1>
-          <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-          
 
-          <hr class="divider" id="anchor-newsletter">
+          <p>L'expertise, le talent, le volontarisme, l'engagement, l'éthique et la collaboration au service du delivery, voilà ce qui caractérise les équipes d'ebiz.</p>
+
+          <p>Que les projets soient Open Source, applications mobiles B2C ou B2B, intranets, ou  infrastructure hautes disponibilités, l'approche nécessite toujours de répondre aux mêmes questions : quelles options structurantes, quelles réponses fonctionnelles, quelles solutions techniques, quelle enveloppe budgétaire et au fond quels moyens humains ?</p>
+
+          <p>Notre ADN, ce sont nos consultants, issus d'un processus de sélection et de formation ambitieux qui s'adresse aux plus motivés par les métiers de l'ingénierie Java/JEE/Mobilité.</p>
+
+          <p>Notre ADN, ce sont nos réalisations, c'est à dire les projets de nos Clients, les projets Open Source comme Gatling ou AA, les workshops techniques ou les contributions sur nos médias.</p>
+
+          <p>Notre ADN enfin, c'est notre capacité d'écoute du marché, et d'anticipation des besoins des DSI pour qu'elles assurent leur fonction essentielle : accompagner, outiller voire précéder la stratégie métier.</p>
+
+          <hr class="divider" id="anchor-pitch">
           <h1>
-            Lettre d'information 
+            Pitch
           </h1>
-          <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+          <p>Depuis 2000, ebiz propose à ses clients des consultants spécialisés dans les technologies Java/JEE et apparentées.<p>
+
+          <p>ebiz, c'est une équipe d'une cinquantaine de femmes et d'hommes, de moins de 30 ans de moyenne d'âge, qui réalisent chaque année des projets pour tous types de clients : startups, banques, assurances, telecom, BTP, transport, services.<p>
+
+          <p>Ce sont certainement des geeks, mais surtout de vrais professionnels au service de la réussite des projets.
+          Ils savent manipuler les premières versions de la stack JEE, mais aussi Spring, la stack Typesafe, les frameworks Javascript ou les principales technologies natives ou génériques mobiles.</p>
+
+          <p>ebiz est la première société du groupe Excilys (mettre groupe excilys en lien vers excilys.com), et à ce titre, partage les valeurs du service équitable qu'elle a contribué à mettre en place et qu'elle fait prospérer chaque jour.</p>
+          
+          <p>ebiz et Excilys animent depuis 2002 un réseau d'écoles d'ingénieurs dans toute la France en réalisant des séminaires techniques, des formations JEE, Mobilité et Agilité.</p>
+
+          <p>En 2009, ebiz a voulu ajouter des projets conséquents à la communauté des développeurs et ainsi apporter sa pierre à l'édifice Open Source. Gatling et AndroidAnnotations ont été les deux premiers projets concrets issus de cette volonté.</p>
       
-          <hr class="divider" id="anchor-contact">
+          <hr class="divider" id="anchor-join">
           <h1>
-            Contact
+            Nous rejoindre
           </h1>
-          <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+          <p>ebiz est bien connue pour son recrutement de jeunes ingénieurs. Durant une période d'intégration de 6 mois, toutes les technologies orthodoxes JEE et Mobiles sont abordées dans le détail, et chacun décide d'une ou plusieurs spécialisations, y compris dans des technologies qui font le buzz. Le logement dans une résidence, le séjour de ski organisé par Excilys, la certification OCPJP achèvent de créer un bon esprit d'équipe.</p>
+
+          <p>Découvrez ici nos offres de stages, et postulez si vous voulez faire partie de notre team.</p>
+
+          <p>ebiz recrute aussi des talents déjà confirmés. Une seule obligation pour postuler : se reconnaître dans son ADN.</p>
+          <p>Alors si vous êtes passionné des technologies Java/JEE et apparentées, de mobilité ou de technologies utilisées dans nos projets open source, postulez. Cassez les codes, et plutôt qu'un CV et une lettre de motivation classiques, montrez de quoi vous êtes capables, car c'est précisément ce qui intéressera l'équipe.</p>
+      
+          <hr class="divider" id="anchor-internship">
+          <h1>
+            Stages 2013
+          </h1>
+
+          <div ng-controller="Internships" id="columns">
+          
+            <div class="internship" ng-repeat="internship in internships" ng-click="download(internship.pdf)">
+                <div class="internship-head">
+                    {{internship.title}}
+                </div>
+                <i class="icon-download-alt"></i>
+                <ul>
+                  <li ng-repeat="line in internship.description">{{line}}</li>
+                </ul>
+            </div>
+
+          </div>
       
       </content>
 
@@ -175,7 +216,6 @@
         </div>
       </div>
 
-
       <!-- Contact form -->
       <div class="footer-column footer-column-right">
         <div class="footer-title">Contact</div>
@@ -189,21 +229,39 @@
         </div>
         <textarea placeholder="Message..." id="mail-content"></textarea><br />
         <button type="submit" class="btn btn-primary btn-small">Envoyer</button>
-        
       </div>
 
       <div class="footer-copyright">
-        <a>Mentions Légales</a> - ©2012 Joan Zapata
+        <a href="#aboutModal" role="button" data-toggle="modal">Mentions Légales</a> - ©2012 eBusiness Information 2000-2013
       </div>
 
 
       <!-- Adresse postale et mail de contact, lien direct vers les stages, lien vers blog, lien vers labs, lien vers excilys.com, mentions légales, copyright -->
     </div>
 
+    <div id="aboutModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h3>Mentions légales</h3>
+      </div>
+      <div class="modal-body">
+        <p>
+Le propriétaire et éditeur de site web est la <strong>SARL eBusiness Information</strong> inscrite au RCS de Créteil sous le numéro <strong>B 432 709 574</strong>.<br />
+Le capital social est de <strong>231 000 euros</strong>.<br />
+Le siège social est situé au <strong>45-47 avenue Carnot - 94230 Cachan</strong>.<br />
+Le standard est le <strong>+33 1 41 24 43 20</strong>.
+        </p>
+      </div>
+      <div class="modal-footer">
+Toute réclamation quant au contenu de ce site doit être adressée par voie postale au siège social de la société à l'attention du directeur de la publication <strong>Olivier Duvoid</strong>.<br />
+      </div>
+    </div>
+
 
     <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>    
     <script src="js/bootstrap-scrollspy.js"></script>  
     <script src="lib/angular/angular.js"></script>
+    <script src="lib/bootstrap/bootstrap.min.js"></script>
     
     <!-- Angular.js -->
     <script src="js/app.js"></script>

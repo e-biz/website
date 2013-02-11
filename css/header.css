@@ -89,25 +89,27 @@ header {
 }
 
 .ebiz {
-	font-size: 3.5em;
+	font-size: 7em;
 	font-weight: bold;
-	font-family: 'Strait', sans-serif;
 	margin: 0;
+	margin-left: 200px;
 	color: white;
 	line-height: 1.3;
-	text-shadow: 
-		0 1px 0 #999, 0 2px 0 #AAA, 
-		0 4px 1px rgba(0, 0, 0, .1), 
-		0 0 5px rgba(0, 0, 0, .1), 
-		0 1px 3px rgba(0, 0, 0, .3), 
-		0 3px 5px rgba(0, 0, 0, .2), 
-		0 5px 10px rgba(0, 0, 0, .25);
+	text-shadow: 0 1px 0 #999, 0 2px 0 #AAA,    0 4px 1px rgba(0, 0, 0, .1),    0 0 5px rgba(0, 0, 0, .1),    0 1px 3px rgba(0, 0, 0, .3),    0 3px 5px rgba(0, 0, 0, .2);
+}
+
+.biz {
+	color: #5ec6ff;
+	text-shadow: 0 1px 0 #5E7C96, 0 2px 0 #2BA6E8,    0 4px 1px rgba(0, 0, 0, .1),    0 0 5px rgba(0, 0, 0, .1),    0 1px 3px rgba(0, 0, 0, .3),    0 3px 5px rgba(0, 0, 0, 0.2);
+
 }
 
 .ebiz-description {
 	font-size: 2em;
 	color: #efefef;
 	line-height: 1.25;
+	width: auto;
+	display: inline;
 }
 
 .header-content {
@@ -135,8 +137,12 @@ header {
 .ebusiness-logo {
 	margin-right: 30px;
 	position: relative;
-	float: left;
-	width: 200px;
+	width: 180px;
+	left: 16px;
+	top: -20px;
+	display: inline;
+	position: absolute;
+	left: 0px;
 }
 
 .header-content .centered {
@@ -145,9 +151,11 @@ header {
 	padding-top: 175px;
 	max-width: 1170px;
 	color: white;
+	text-align: center;
 }
 
 .header-content .centered .text {
 	position: relative;
-	max-width: 770px;
+	text-align: left;
+	left: 216px;
 }
