@@ -18,7 +18,7 @@ h1 {
 }
 
 content p {
-  font-size: 17px;
+  font-size: 19px;
   line-height: 1.4;
 }
 
@@ -209,6 +209,91 @@ a:hover {
   -moz-transform:rotate(30deg); /* Firefox */
   -webkit-transform:rotate(30deg); /* Safari and Chrome */
   -o-transform:rotate(30deg); /* Opera */
-;
   left: 130px;
+}
+
+
+/* words */
+
+.words {
+  text-align: center; 
+}
+
+.words li {
+  font-size: 45px;
+  display: inline;
+  list-style: none;
+}
+
+.words li:nth-child(even) {
+  color: #BBB;
+}
+
+/* adn */
+
+.adn {
+  position: relative;
+}
+
+.adn .box {
+  font-size: 19px;
+  line-height: 1.3;
+  position: absolute;
+  background: white;
+  border-right: 0px solid #29A9DF;
+  margin-bottom: 15px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow:    1px 1px 4px rgba(0, 0, 0, 0.2);
+  box-shadow:         1px 1px 4px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  top: 0px;
+  right: 0px;
+  padding: 20px;
+  border-left: 1px solid #bbb;
+}
+
+.adn .box.box1 {
+  left: 317px;
+  top: 21px;
+}
+
+
+.adn .box.box2 {
+  left: 746px;
+  top: 175px;
+  border-left: 1px solid #29A9DF;
+}
+
+.adn .box.box3 {
+  left: 355px;
+  top: 330px;
+}
+
+.adn .box > div {
+  position: absolute;
+  background: #29A9DF;
+  height: 1px;
+  right: 100%;
+  top: 88px;
+  opacity: 0.5;
+}
+.adn .box1 > div {
+  width: 175px;
+  background: #bbbbbb;
+}
+
+.adn .box2 > div {
+    width: 578px;
+}
+
+.adn .box3 > div {
+    width: 198px;
+    background: #bbbbbb;
+}
+
+.adn strong {
+  color: #29A9DF;
 }
