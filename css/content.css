@@ -39,14 +39,15 @@ a:hover {
   margin: 80px 0; /* Space out the Bootstrap <hr> more */
 }
 .featurette {
-  padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
+  padding-top: 61px; /* Vertically center images part 1: add padding above and below text. */
   overflow: hidden; /* Vertically center images part 2: clear their floats. */
   cursor: pointer;
+  padding-bottom: 40px;
 }
 .featurette-image {
-	width: 360px;
+	width: 340px;
   position: relative;
-	margin-top: -91px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+	margin-top: -57px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
 }
 
 /* Give some space on the sides of the floated elements so text doesn't run right into it. */
@@ -174,6 +175,8 @@ a:hover {
   left: 0px;
   opacity:1;
   filter:alpha(opacity=100); /* For IE8 and earlier */
+;
+  overflow: visible;
 }
 
 /* Reflect */
