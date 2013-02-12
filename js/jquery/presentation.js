@@ -1,4 +1,4 @@
-$(function() {
+$(document).ready(function() {
 
 	/** Some basic effets on load */
 	
@@ -82,6 +82,6 @@ $(function() {
 
 	$(window).scroll(manageElemVisibility);
 
-	setTimeout(manageElemVisibility, delay);
+	setTimeout(manageElemVisibility, delay+100);
 
  });
