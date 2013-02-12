@@ -33,4 +33,31 @@ $(function() {
 		$(this).attr("rows", 0);
 	});
 
+
+	$(".slideIn").addClass("inactive");
+	$(".slideIn:even").addClass("right");
+	
+	var pageHeight = $(window).height();
+	var manageElemVisibility = function(){
+		var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+		$(".slideIn.inactive").each(function(index){
+			if (scrollTop + pageHeight*4/5 > this.offsetTop){
+				console.log("fadeIn");
+				$(this).addClass('shown');
+				$(this).removeClass('inactive');
+			}
+		});
+	};
+
+	$(window).resize(function() {
+		pageHeight = $(window).height();
+		manageElemVisibility();
+	});
+
+	$(window).scroll(manageElemVisibility);
+
+
+
+
+
  });
