@@ -22,8 +22,33 @@ $(function() {
 
 	delay += 100;
 	$(".header-top-strip-content-left").hide().delay(delay).fadeIn(speed);
-	
-	/** Message box gets bigger on focus */
+
+	/* Reflect after load */
+
+	var reflect = function(){
+		console.log("Doing reflect.");
+		$(".reflect")
+			.css("right", "100%")
+			.css("left", "auto")
+			.css("opacity", "0")
+			.delay(1000)
+			.queue(function(){
+				$(this).css("left", "100%");
+				$(this).css("opacity", "1");
+				$(this).dequeue();
+			})
+			.delay(150)
+			.queue(function(){
+				$(this).css("opacity", "0");
+				$(this).dequeue();
+			});
+
+		setTimeout(reflect, 2000+20000*Math.random());
+	}
+
+	reflect();
+
+	/* Message box gets bigger on focus */
 
 	$("#mail-content").focus(function(){
 		$(this).attr("rows", 6);
@@ -34,9 +59,10 @@ $(function() {
 	});
 
 
+	/* Content slide effect */
+
 	$(".slideIn").addClass("inactive");
 	$(".slideIn:even").addClass("right");
-	
 	var pageHeight = $(window).height();
 	var manageElemVisibility = function(){
 		var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
@@ -56,8 +82,6 @@ $(function() {
 
 	$(window).scroll(manageElemVisibility);
 
-
-
-
+	setTimeout(manageElemVisibility, delay);
 
  });
