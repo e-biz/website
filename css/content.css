@@ -141,6 +141,7 @@ a:hover {
   color: #888;
   list-style-type: none;
   border-top: 1px dashed #f1f1f1;
+  font-size: 1.1em;
 }
 
 .internship:hover {
@@ -215,6 +216,32 @@ a:hover {
   left: 130px;
 }
 
+/* top stripe */
+
+a.forkme {
+  -webkit-transform-origin: 0% 56%;
+  background: rgba(94, 198, 255, 0.5);
+  position: absolute;
+  right: -103px;
+  top: -73px;
+  z-index: 11;
+  transform:rotate(40deg);
+  -ms-transform:rotate(40deg); /* IE 9 */
+  -moz-transform:rotate(40deg); /* Firefox */
+  -webkit-transform: rotate(40deg); /* Safari and Chrome */
+  -o-transform:rotate(40deg); /* Opera */
+  transform: rotate(40deg);
+ -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow:    1px 1px 4px rgba(0, 0, 0, 0.2);
+  box-shadow:         1px 1px 4px rgba(0, 0, 0, 0.2);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+  padding: 23px 103px;
+  -webkit-transform-origin: 0% 56%;
+  font-size: 1.6em;
+  color: white;
+  font-weight: bold;
+  font-variant: small-caps;
+}
 
 /* words */
 
