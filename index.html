@@ -161,6 +161,7 @@
 
             <div class="timeline slideIn" ng-controller="Timeline">
               <content>
+
                 <div class="end">&nbsp;</div>
                 <div class="start">&nbsp;</div>
                 <div class="date {{{true: 'with-text', false: ''}[date % 5 == 0 || date == 2013]}} {{{true: 'now', false: ''}[date == 2013]}}" style="left: {{(date-2000)*100/14}}%; width: {{100/14}}%" ng-repeat="date in [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013]">
@@ -169,11 +170,23 @@
                  <div class="date-strip" style="left: {{(date-2000)*100/14}}%; width: {{100/14}}%" ng-repeat="date in [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013]">
                   &nbsp;
                 </div>
+
+
+                <div class="text" style="left: {{(1999.84-2000)*100/14}}%; top: 20px;">
+                  Depuis 2000, ebiz propose à ses clients des consultants spécialisés dans les technologies Java/JEE et apparentées.
+                </div>
+
+                <div class="text" style="left: {{(2001.84-2000)*100/14}}%; top: 162px;">
+                  ebiz et Excilys animent depuis 2002 un réseau d'écoles d'ingénieurs dans toute la France en réalisant des séminaires techniques, des formations JEE, Mobilité et Agilité.</p>
+                </div>
+
+                  <div class="text" style="left: {{(2008.6-2000)*100/14}}%; top: 40px;">
+                    En 2009, ebiz a voulu ajouter des projets conséquents à la communauté des développeurs et ainsi apporter sa pierre à l'édifice Open Source. <br />Gatling et AndroidAnnotations ont été les deux premiers projets concrets issus de cette volonté.
+                  </div>
               </content>
             </div>
 
             <content>
-            <p>Depuis 2000, ebiz propose à ses clients des consultants spécialisés dans les technologies Java/JEE et apparentées.<p>
 
             <p>ebiz, c'est une équipe d'une cinquantaine de femmes et d'hommes, de moins de 30 ans de moyenne d'âge, qui réalisent chaque année des projets pour tous types de clients : startups, banques, assurances, telecom, BTP, transport, services.<p>
 
@@ -182,9 +195,9 @@
 
             <p>ebiz est la première société du groupe <a href="http://excilys.com">Excilys</a>, et à ce titre, partage les valeurs du service équitable qu'elle a contribué à mettre en place et qu'elle fait prospérer chaque jour.</p>
             
-            <p>ebiz et Excilys animent depuis 2002 un réseau d'écoles d'ingénieurs dans toute la France en réalisant des séminaires techniques, des formations JEE, Mobilité et Agilité.</p>
+           
 
-            <p>En 2009, ebiz a voulu ajouter des projets conséquents à la communauté des développeurs et ainsi apporter sa pierre à l'édifice Open Source. Gatling et AndroidAnnotations ont été les deux premiers projets concrets issus de cette volonté.</p>
+            
           
           <hr class="divider" id="anchor-join">
           <div class="slideIn">

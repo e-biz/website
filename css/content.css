@@ -397,3 +397,12 @@ a.forkme {
 .timeline .date-strip:nth-child(odd) {
   background: rgba(41, 169, 223, 0.03);
 }
+
+.timeline .text {
+  background: transparent url('../img/timeline-point.png') no-repeat left center;
+  font-size: 19px;
+  width: 300px;
+  position: absolute;
+  color: #666;
+  padding-left: 60px;
+}
