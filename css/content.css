@@ -18,7 +18,7 @@ h1 {
 }
 
 content p {
-  font-size: 19px;
+  font-size: 21px;
   line-height: 1.4;
 }
 
@@ -255,6 +255,7 @@ a.forkme {
   font-size: 45px;
   display: inline;
   list-style: none;
+  font-weight: 300;
 }
 
 .words li:nth-child(even) {
