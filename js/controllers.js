@@ -93,3 +93,7 @@ function Internships($scope){
 	];
 
 }
+
+function Timeline($scope) {
+
+}
