@@ -1,2 +1,1 @@
-
-
+![Screenshot](https://raw.github.com/excilys/ebiz/gh-pages/readme.png)
