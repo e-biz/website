@@ -1,7 +1,7 @@
 
 
 header {
-	margin-bottom: 60px;
+	margin-bottom: 50px;
 	background: transparent url('../img/background1.jpg') center center;
 }
 
@@ -101,7 +101,6 @@ header {
 .biz {
 	color: #5ec6ff;
 	text-shadow: 0 1px 0 #5E7C96, 0 2px 0 #2BA6E8,    0 4px 1px rgba(0, 0, 0, .1),    0 0 5px rgba(0, 0, 0, .1),    0 1px 3px rgba(0, 0, 0, .3),    0 3px 5px rgba(0, 0, 0, 0.2);
-
 }
 
 .ebiz-description {
