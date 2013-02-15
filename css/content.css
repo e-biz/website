@@ -1,7 +1,8 @@
 
 .divider {
     margin: 60px 0;
-	border-top: 1px solid #DDD;
+	 border-top: 1px solid #DDD;
+   width: 100%
 }
 
 content {
@@ -23,12 +24,12 @@ content p {
 }
 
 a, a:link, a:visited {
-  color: #74CAEC;
+  color: #29A9DF;
   outline: none;
 }
 
 a:hover {
-  color: #99e0fc;
+  color: #74CAEC;
   text-decoration: none;
 }
 
@@ -36,11 +37,48 @@ a:hover {
 .logo {
   color: #29A9DF;
   font-weight: bold;
+  font-size: 110%;
 }
 
 img.logo {
   position: relative;
   left: -2px;
+}
+
+
+content .column30 {
+  padding-top: 20px;
+  float: left;
+  width: 100%;
+  -moz-column-gap: 30px;
+  -moz-column-fill: auto;
+  -webkit-column-count: 3;
+  -webkit-column-gap: 30px;
+  -webkit-column-fill: auto;
+  column-count: 3;
+  column-gap: 30px;
+  column-fill: auto;
+  display: block;
+}
+
+content .column30 p {  
+  -moz-column-break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+  column-break-inside: avoid;
+}
+
+content .column30 p strong {
+  color: #666;
+} 
+
+content .column30 .column-head {
+  display: block;
+  width: 100%;
+  font-size: 4em;
+  text-align: center;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 1px white;
+  color: #666;
 }
 
 /* Featurettes
