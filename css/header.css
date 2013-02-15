@@ -68,7 +68,6 @@ header {
 	width: 100%;
 	text-align: right;
 	color: white;
-	font-size: 1.3em;
 	padding-top: 0.8em;
 }
 
@@ -89,7 +88,7 @@ header {
 }
 
 .ebiz {
-	font-size: 7em;
+	font-size: 98px;
 	font-weight: bold;
 	margin: 0;
 	margin-left: 200px;
@@ -104,7 +103,7 @@ header {
 }
 
 .ebiz-description {
-	font-size: 2em;
+	font-size: 32px;
 	color: #efefef;
 	line-height: 1.25;
 	width: auto;
