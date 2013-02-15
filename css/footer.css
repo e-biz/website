@@ -7,15 +7,12 @@
 	width: 500px;
 	letter-spacing: 1px;
 	line-height: 1.5;
-	border-right: 1px solid #82b6e3;
 }
 
 .footer-column-right {
 	right:  auto;
 	left: 50%;
 	border-right: none;
-	border-left: 1px solid #0e487a;
-	padding-left: 20px;
 }
 
 .footer {
@@ -73,7 +70,7 @@
 }
 
 .footer-copyright {
-	font-size: 0.8em;
+	font-size: 0.9em;
 	position: absolute;
 	bottom: 0px;
 	padding: 10px;
@@ -136,3 +133,16 @@
 	color: #EEE;
 }
 
+.footer .quote {
+	font-style: italic;
+	color: white;
+	font-weight: bold;
+	font-size: 2em;
+	margin-top: 50px;
+}
+
+.footer .quote i {
+	opacity: 0.4;
+	padding-left: 10px;
+	padding-right: 3px;
+}
