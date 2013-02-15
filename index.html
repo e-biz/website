@@ -120,11 +120,11 @@
 
           <hr class="divider" id="anchor-adn">  
           
-          <h1>
+          <h1 class="slideIn">
             Notre ADN
           </h1>
 
-          <p>Que les projets soient Open Source, applications mobiles B2C ou B2B, intranets, ou  infrastructure hautes disponibilités, l'approche nécessite toujours de répondre aux mêmes questions : quelles options structurantes, quelles réponses fonctionnelles, quelles solutions techniques, quelle enveloppe budgétaire et au fond quels moyens humains ?</p>
+          <p class="slideIn">Que les projets soient Open Source, applications mobiles B2C ou B2B, intranets, ou  infrastructure hautes disponibilités, l'approche nécessite toujours de répondre aux mêmes questions : quelles options structurantes, quelles réponses fonctionnelles, quelles solutions techniques, quelle enveloppe budgétaire et au fond quels moyens humains ?</p>
 
           <ul class="words slideIn">
             <li>expertise</li><li>talent</li><li>volontarisme</li><li>éthique</li><li>collaboration</li>
@@ -150,70 +150,71 @@
           
 
           <hr class="divider" id="anchor-pitch">
-            <h1>
-              Pitch
-            </h1>
+          
+          <h1 class="slideIn">
+            Pitch
+          </h1>
 
           </content>
 
-            <div class="timeline slideIn" ng-controller="Timeline">
-              <content>
+          <div class="timeline slideIn" ng-controller="Timeline">
+            <content>
 
-                <div class="end">&nbsp;</div>
-                <div class="start">&nbsp;</div>
-                <div class="date {{{true: 'with-text', false: ''}[date % 5 == 0 || date == 2013]}} {{{true: 'now', false: ''}[date == 2013]}}" style="left: {{(date-2000)*100/14}}%; width: {{100/14}}%" ng-repeat="date in [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013]">
-                  {{{true: date, false: ''}[date % 5 == 0 || date == 2013]}}
+              <div class="end">&nbsp;</div>
+              <div class="start">&nbsp;</div>
+              <div class="date {{{true: 'with-text', false: ''}[date % 5 == 0 || date == 2013]}} {{{true: 'now', false: ''}[date == 2013]}}" style="left: {{(date-2000)*100/14}}%; width: {{100/14}}%" ng-repeat="date in [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013]">
+                {{{true: date, false: ''}[date % 5 == 0 || date == 2013]}}
+              </div>
+               <div class="date-strip" style="left: {{(date-2000)*100/14}}%; width: {{100/14}}%" ng-repeat="date in [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013]">
+                &nbsp;
+              </div>
+
+
+              <div class="text" style="left: {{(1999.84-2000)*100/14}}%; top: 40px;">
+                <div>
+                  Depuis <strong>2000</strong>, <span class="logo">eBiz</span><img src="img/ebusiness-mini.png" class="logo"></img> propose à ses clients des consultants spécialisés dans les technologies Java/JEE et apparentées.
                 </div>
-                 <div class="date-strip" style="left: {{(date-2000)*100/14}}%; width: {{100/14}}%" ng-repeat="date in [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013]">
-                  &nbsp;
+              </div>
+
+              <div class="text" style="left: {{(2001.84-2000)*100/14}}%; top: 182px;">
+                <div>
+                  <span class="logo">eBiz</span><img src="img/ebusiness-mini.png" class="logo"></img> et Excilys animent depuis <strong>2002</strong> un réseau d'écoles d'ingénieurs dans toute la France en réalisant des séminaires techniques, des formations JEE, Mobilité et Agilité.
                 </div>
+              </div>
 
-
-                <div class="text" style="left: {{(1999.84-2000)*100/14}}%; top: 40px;">
+                <div class="text" style="left: {{(2008.6-2000)*100/14}}%; top: 40px;">
                   <div>
-                    Depuis <strong>2000</strong>, <span class="logo">eBiz</span><img src="img/ebusiness-mini.png" class="logo"></img> propose à ses clients des consultants spécialisés dans les technologies Java/JEE et apparentées.
+                    En <strong>2009</strong>, <span class="logo">eBiz</span><img src="img/ebusiness-mini.png" class="logo"></img> a voulu ajouter des projets conséquents à la communauté des développeurs et ainsi apporter sa pierre à l'édifice Open Source. <br />Gatling et AndroidAnnotations ont été les deux premiers projets concrets issus de cette volonté.
                   </div>
                 </div>
-
-                <div class="text" style="left: {{(2001.84-2000)*100/14}}%; top: 182px;">
-                  <div>
-                    <span class="logo">eBiz</span><img src="img/ebusiness-mini.png" class="logo"></img> et Excilys animent depuis <strong>2002</strong> un réseau d'écoles d'ingénieurs dans toute la France en réalisant des séminaires techniques, des formations JEE, Mobilité et Agilité.
-                  </div>
-                </div>
-
-                  <div class="text" style="left: {{(2008.6-2000)*100/14}}%; top: 40px;">
-                    <div>
-                      En <strong>2009</strong>, <span class="logo">eBiz</span><img src="img/ebusiness-mini.png" class="logo"></img> a voulu ajouter des projets conséquents à la communauté des développeurs et ainsi apporter sa pierre à l'édifice Open Source. <br />Gatling et AndroidAnnotations ont été les deux premiers projets concrets issus de cette volonté.
-                    </div>
-                  </div>
-              </content>
-            </div>
+            </content>
+          </div>
 
             <content>
 
-            <p><span class="logo">eBiz</span><img src="img/ebusiness-mini.png" class="logo"></img>, c'est une équipe d'une cinquantaine de femmes et d'hommes, de moins de 30 ans de moyenne d'âge, qui réalisent chaque année des projets pour tous types de clients : startups, banques, assurances, telecom, BTP, transport, services.<p>
+            <p class="slideIn"><span class="logo">eBiz</span><img src="img/ebusiness-mini.png" class="logo"></img>, c'est une équipe d'une cinquantaine de femmes et d'hommes, de moins de 30 ans de moyenne d'âge, qui réalisent chaque année des projets pour tous types de clients : startups, banques, assurances, telecom, BTP, transport, services.<p>
 
-            <p>Ce sont certainement des geeks, mais surtout de vrais professionnels au service de la réussite des projets.
+            <p class="slideIn">Ce sont certainement des geeks, mais surtout de vrais professionnels au service de la réussite des projets.
             Ils savent manipuler les premières versions de la stack JEE, mais aussi Spring, la stack Typesafe, les frameworks Javascript ou les principales technologies natives ou génériques mobiles.</p>
 
-            <p><span class="logo">eBiz</span><img src="img/ebusiness-mini.png" class="logo"></img> est la première société du groupe <a href="http://excilys.com">Excilys</a>, et à ce titre, partage les valeurs du service équitable qu'elle a contribué à mettre en place et qu'elle fait prospérer chaque jour.</p>
+            <p class="slideIn"><span class="logo">eBiz</span><img src="img/ebusiness-mini.png" class="logo"></img> est la première société du groupe <a href="http://excilys.com">Excilys</a>, et à ce titre, partage les valeurs du service équitable qu'elle a contribué à mettre en place et qu'elle fait prospérer chaque jour.</p>
             
            
 
             
           
           <hr class="divider" id="anchor-join">
-          <div class="slideIn">
-            <h1>
+          <div>
+            <h1 class="slideIn">
               Nous rejoindre
             </h1>
 
-            <p><span class="logo">eBiz</span><img src="img/ebusiness-mini.png" class="logo"></img> est bien connue pour son recrutement de jeunes ingénieurs. Durant une période d'intégration de 6 mois, toutes les technologies orthodoxes JEE et Mobiles sont abordées dans le détail, et chacun décide d'une ou plusieurs spécialisations, y compris dans des technologies qui font le buzz. Le logement dans une résidence, le séjour de ski organisé par Excilys, la certification OCPJP achèvent de créer un bon esprit d'équipe.</p>
+            <p class="slideIn"><span class="logo">eBiz</span><img src="img/ebusiness-mini.png" class="logo"></img> est bien connue pour son recrutement de jeunes ingénieurs. Durant une période d'intégration de 6 mois, toutes les technologies orthodoxes JEE et Mobiles sont abordées dans le détail, et chacun décide d'une ou plusieurs spécialisations, y compris dans des technologies qui font le buzz. Le logement dans une résidence, le séjour de ski organisé par Excilys, la certification OCPJP achèvent de créer un bon esprit d'équipe.</p>
 
-            <p>Découvrez ici nos offres de stages, et postulez si vous voulez faire partie de notre team.</p>
+            <p class="slideIn">Découvrez ici nos offres de stages, et postulez si vous voulez faire partie de notre team.</p>
 
-            <p><span class="logo">eBiz</span><img src="img/ebusiness-mini.png" class="logo"></img> recrute aussi des talents déjà confirmés. Une seule obligation pour postuler : se reconnaître dans son ADN.</p>
-            <p>Alors si vous êtes passionné des technologies Java/JEE et apparentées, de mobilité ou de technologies utilisées dans nos projets open source, postulez. Cassez les codes, et plutôt qu'un CV et une lettre de motivation classiques, montrez de quoi vous êtes capables, car c'est précisément ce qui intéressera l'équipe.</p>
+            <p class="slideIn"><span class="logo">eBiz</span><img src="img/ebusiness-mini.png" class="logo"></img> recrute aussi des talents déjà confirmés. Une seule obligation pour postuler : se reconnaître dans son ADN.</p>
+            <p class="slideIn">Alors si vous êtes passionné des technologies Java/JEE et apparentées, de mobilité ou de technologies utilisées dans nos projets open source, postulez. Cassez les codes, et plutôt qu'un CV et une lettre de motivation classiques, montrez de quoi vous êtes capables, car c'est précisément ce qui intéressera l'équipe.</p>
           </div>
 
           <hr class="divider" id="anchor-internship">
