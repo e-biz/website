@@ -51,6 +51,8 @@ content .column30 {
   float: left;
   width: 100%;
   display: block;
+  text-align: justify;
+  font-size: 1.3em;
 }
 
 content .column30 .column {
