@@ -62,6 +62,20 @@ img.logo {
   left: -2px;
 }
 
+i.icon-gray {
+  color: #DDD;
+  font-size: 2em;
+  line-height: 0.5;
+  padding-right: 6px;
+}
+
+.sidenote {
+  width: 100%;
+  text-align: center;
+  color: #999;
+  font-size: 0.9em;
+}
+
 
 content .column30 {
   padding-top: 30px;
@@ -72,8 +86,8 @@ content .column30 {
 
 content .column30 .column {
   float: left;
-  width: 29%;
-  margin-left: 4%;
+  width: 30%;
+  margin-left: 3%;
 }
 
 content .column30 p strong {
@@ -88,6 +102,11 @@ content .column30 .column-head {
   margin-bottom: 30px;
   text-shadow: 1px 1px 1px white;
   color: #666;
+}
+
+content .column30 .column-head.highlighted {
+  font-size: 6em;
+  margin-top: 20px;
 }
 
 /* Featurettes
@@ -146,7 +165,7 @@ content .column30 .column-head {
 ------------------------- */
 
 #columns {  
-  padding-right: 70px;
+  padding-right: 0px;
   -moz-column-gap: 15px;
   -moz-column-fill: auto;
   -webkit-column-count: 3;
@@ -156,6 +175,7 @@ content .column30 .column-head {
   column-gap: 15px;
   column-fill: auto;
   overflow: visible;
+  margin-top: 40px;
 }
 
 .internship {
@@ -185,8 +205,8 @@ content .column30 .column-head {
 
 .internship i {
   position: absolute;
-  right: 12px;
-  top: 20px;
+  right: 17px;
+  top: 17px;
 }
 
 .internship ul {
