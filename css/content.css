@@ -13,10 +13,31 @@ content {
 }
 
 h1 {
-	color: #333; 
-	font-size: 45px;
-  font-weight: 300;
+	color: #BBB; 
+	font-size: 1.3em;
+	font-weight: 300;
 	margin-bottom: 56px;
+	width: 100%;
+	text-align: center;
+	text-shadow: 1px 1px 0px white;
+  border-top: 1px solid #DDD;
+  border-bottom: 1px solid #ffffff;
+  height: 0px;
+  line-height: 0px;
+	margin-top: 120px;
+	margin-bottom: 120px;
+}
+
+h1 > span {
+  background: white url('../img/bg.jpg') center center;
+  padding: 0px 40px;
+}
+
+h1 > span i {
+  line-height: 0px !important;
+  position: relative;
+  top: -8px;
+  margin-right: 10px;
 }
 
 a, a:link, a:visited {
@@ -76,15 +97,15 @@ content .column30 .column-head {
   margin: 80px 0; /* Space out the Bootstrap <hr> more */
 }
 .featurette {
-  padding-top: 81px; /* Vertically center images part 1: add padding above and below text. */
+  padding-top: 131px; /* Vertically center images part 1: add padding above and below text. */
   overflow: hidden; /* Vertically center images part 2: clear their floats. */
   cursor: pointer;
   padding-bottom: 40px;
 }
 .featurette-image {
-	width: 300px;
+	width: 260px;
   position: relative;
-	margin-top: -67px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+	margin-top: -47px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
 }
 
 /* Give some space on the sides of the floated elements so text doesn't run right into it. */
@@ -289,7 +310,7 @@ a.forkme {
 }
 
 .words li {
-  font-size: 45px;
+  font-size: 2.7em;
   display: inline;
   list-style: none;
   font-weight: 300;
@@ -380,7 +401,7 @@ a.forkme {
   position: relative;
   background: white;
   height: 100%;
-  margin-top: 130px;
+  margin-top: 200px;
 }
 
 .timeline > content > .start {
@@ -406,7 +427,7 @@ a.forkme {
   font-weight: bold;
   bottom: 0px;
   top: -13px;
-  border-left: 5px solid rgba(0, 0, 0, 0.05);
+  border-left: 3px solid rgba(0, 0, 0, 0.05);
   color: #888;
   height: 13px;
 }
@@ -428,7 +449,7 @@ a.forkme {
 
 .timeline .date-strip {
  position: absolute;
- top: -13px;
+ top: -73px;
  height: 13px;
 }
 

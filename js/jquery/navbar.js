@@ -38,7 +38,7 @@ $(function() {
 	});
 	
 	function goToByScroll(id){
-		var offset = $(id).offset().top - 20;
+		var offset = $(id).offset().top - 120;
 		$('html,body').animate({scrollTop: offset}, 400, function(){
 			adjustNavbar();
 			$('[data-spy="scroll"]').each(function () {
