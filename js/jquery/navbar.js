@@ -32,7 +32,7 @@ $(function() {
 	
 	// Using delegate insure it will be executed
 	// *after* the event is processed by the browser
-	$(document).delegate('.forkme', 'click', function(e) {
+	$(document).delegate('.smooth-scroll', 'click', function(e) {
 		goToByScroll($(this).attr("href"));
 		e.preventDefault();
 	});
@@ -44,6 +44,7 @@ $(function() {
 			$('[data-spy="scroll"]').each(function () {
 				var $spy = $(this).scrollspy('refresh');
 			});
+			location.hash = id;
 		});
 	}
 
