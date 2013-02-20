@@ -296,7 +296,11 @@ content .column30 .column-head.highlighted {
 /* top stripe */
 
 a.forkme {
+  transform-origin: 0% 56%;
+  -ms-transform-origin: 0% 56%;
+  -moz-transform-origin: 0% 56%;
   -webkit-transform-origin: 0% 56%;
+  -o-transform-origin: 0% 56%;
   background: rgba(94, 198, 255, 0.5);
   position: absolute;
   right: -103px;
