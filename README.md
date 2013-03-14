@@ -1,1 +1,1 @@
-![Screenshot](https://raw.github.com/excilys/ebiz/gh-pages/readme.png)
+![Screenshot](https://raw.github.com/e-biz/website/gh-pages/readme.png)
