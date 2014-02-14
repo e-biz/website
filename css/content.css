@@ -124,6 +124,11 @@ content .column30 .column-head.highlighted {
   position: relative;
 	margin-top: -47px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
 }
+.designmyapp-image {
+	width: 300px;
+    position: relative;
+	margin-top: -10px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+}
 
 /* Give some space on the sides of the floated elements so text doesn't run right into it. */
 .featurette-image.pull-left {
