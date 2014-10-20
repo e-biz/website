@@ -25,7 +25,7 @@ function Internships($scope) {
     $scope.internships = [
 
         {title: "Serious game Android et iPad",
-            pdf: "http://www.ebusinessinformation.fr/img/stages2014/REC.StageG3.Serious_Game_Tablette_Android_IPad.2014.T1.2.pdf",
+            pdf: "http://www.ebusinessinformation.fr/img/stages2015/REC.StageG3.Serious_Game_Tablette_Android_IPad.2015.T1.1.pdf",
             description: [
                 "Outils et normes Java/JEE",
                 "Serveurs d’applications JBoss/Tomcat",
@@ -35,7 +35,7 @@ function Internships($scope) {
             ]},
 
         {title: "Capico Mobile",
-            pdf: "http://www.ebusinessinformation.fr/img/stages2014/REC.StageG3.CAPICO_Android_IPad.2014.T1.2.pdf",
+            pdf: "http://www.ebusinessinformation.fr/img/stages2015/REC.StageG3.CAPICO_Android_IPad.2015.T1.1.pdf",
             description: [
                 "Outils et normes Java/JEE",
                 "Serveurs d’applications JBoss / Tomcat",
@@ -45,7 +45,7 @@ function Internships($scope) {
             ]},
 
         {title: "Gatling Stress Tool",
-            pdf: "http://www.ebusinessinformation.fr/img/stages2014/REC.StageG3.Gatling.2014.T1.2.pdf",
+            pdf: "http://www.ebusinessinformation.fr/img/stages2015/REC.StageG3.Gatling.2015.T1.1.pdf",
             description: [
                 "Scala",
                 "Akka",
@@ -54,7 +54,7 @@ function Internships($scope) {
             ]},
 
         {title: "Capico HTML5, CSS3, AngularJS",
-            pdf: "http://www.ebusinessinformation.fr/img/stages2014/REC.StageG3.CAPICO_HTML5_CSS3.2014.T1.2.pdf",
+            pdf: "http://www.ebusinessinformation.fr/img/stages2015/REC.StageG3.CAPICO_HTML5_CSS3.2015.T1.2.pdf",
             description: [
                 "Outils et normes Java/JEE",
                 "Serveurs d’applications JBoss / Tomcat",
@@ -64,7 +64,7 @@ function Internships($scope) {
             ]},
 
         {title: "Cloud computing",
-            pdf: "http://www.ebusinessinformation.fr/img/stages2014/REC.StageG3.JEE.Capico_CloudComputing.2014.T1.2.pdf",
+            pdf: "http://www.ebusinessinformation.fr/img/stages2015/REC.StageG3.JEE.Capico_CloudComputing.2015.T1.1.pdf",
             description: [
                 "Serveurs d’applications JBoss / Tomcat",
                 "Amazon, AppEngine, Cloud Foundry",
@@ -74,7 +74,7 @@ function Internships($scope) {
             ]},
 
         {title: "Capico JavaEE",
-            pdf: "http://www.ebusinessinformation.fr/img/stages2014/REC.StageG3.JEE.Capico.2014.T1.2.pdf",
+            pdf: "http://www.ebusinessinformation.fr/img/stages2015/REC.StageG3.JEE.Capico.2015.T1.1.pdf",
             description: [
                 "Outils et normes Java/JEE",
                 "Serveurs d’applications JBoss / Tomcat",
@@ -84,17 +84,16 @@ function Internships($scope) {
                 "La méthode agile SCRUM pour le suivi du projet"
             ]},
 
-        {title: "Interface papier/crayon",
-            pdf: "http://www.ebusinessinformation.fr/img/stages2014/REC.StageG3.JEE.Capico_Interfacage_Papier_Crayon.2014.T1.2.pdf",
+        {title: "Design My App",
+            pdf: "http://www.ebusinessinformation.fr/img/stages2015/REC.StageG3.DESIGNMYAPP_JAVA_HTML5_CSS3_ANGULARJS_ANDROID_CORDOVA.2015.T1.2.pdf",
             description: [
                 "Outils et normes Java/JEE",
-                "Serveurs d’applications JBoss / Tomcat",
-                "Web services",
-                "Flex",
-                "Format Open Document",
-                "La méthode agile SCRUM pour le suivi du projet",
-                "Connaissance en traitement d’images est un plus"
-            ]},
+                "Conteneur web Tomcat",
+                "Web services REST",
+                "Clients mobiles Android, IOS",
+                "Clients web HTML5, CSS3, et AngularJS",
+                "Une approche agile SCRUM/KANBAN pour le suivi du projet"
+            ]}
     ];
 
 }
