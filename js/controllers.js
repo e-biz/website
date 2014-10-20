@@ -87,11 +87,13 @@ function Internships($scope) {
         {title: "Design My App",
             pdf: "http://www.ebusinessinformation.fr/img/stages2015/REC.StageG3.DESIGNMYAPP_JAVA_HTML5_CSS3_ANGULARJS_ANDROID_CORDOVA.2015.T1.2.pdf",
             description: [
-                "Outils et normes Java/JEE",
+                "Outils et normes Java/JEE, Spring, Maven",
+		"MongoDB",
                 "Conteneur web Tomcat",
                 "Web services REST",
                 "Clients mobiles Android, IOS",
                 "Clients web HTML5, CSS3, et AngularJS",
+		"Docker, OpenStack",
                 "Une approche agile SCRUM/KANBAN pour le suivi du projet"
             ]}
     ];
