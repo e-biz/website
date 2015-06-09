@@ -60,6 +60,7 @@ a:hover {
 img.logo {
   position: relative;
   left: -2px;
+  max-width:100px;
 }
 
 i.icon-gray {
@@ -157,6 +158,23 @@ content .column30 .column-head.highlighted {
   color: #888;
   display: inline;
   padding-bottom: 3px;
+}
+
+.featurette .twitter-link a {
+  color: #55ACEE;
+  font-weight: bold;
+}
+
+.float-right {
+  float:right;
+}
+
+.float-left {
+  float:left;
+}
+
+.float-right.with-margin {
+  margin-right: 310px;
 }
 
 .featurette:hover .link {
