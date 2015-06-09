@@ -2,7 +2,7 @@
 <html lang="en" ng-app="ebizApp">
   <head>
     <meta charset="utf-8">
-    <title>eBiz</title>
+    <title>eBusiness Information</title>
 
     <!-- App css -->
     <link href="css/bootstrap.min.css" rel="stylesheet"/>
@@ -124,7 +124,7 @@
             </div>
 
 
-        <div class="featurette slideIn" ng-click="redirect('https://http://openstreetmap.fr')">
+        <div class="featurette slideIn" ng-click="redirect('https://openstreetmap.fr')">
           <img class="featurette-image pull-right designmyapp-image" src="./img/osm_contributor.png">
           <h2 class="featurette-heading">OpenStreetMap. <span class="muted">DesignMyApp Map Tools.</span></h2>
           <p class="lead">
@@ -134,7 +134,7 @@
           <p>Génération de tuiles statiques au format MBTiles. Visitez <a ng-click="redirect('https://tiles.designmyapp.mobi')" href="">tiles.designmyapp.mobi</a>.</p>
           <p>Création de fichiers de points géolocalisés. Visitez <a ng-click="redirect('https://poimanager.designmyapp.mobi')" href="">poimanager.designmyapp.mobi</a>.</p>
           <p>Nous créons pour nos clients des serveurs de tuiles ou des apps sur mesure grâce à notre maîtrise de OSM et des technologies web et mobiles.</p>
-          <p class="link float-left">osm.designmyapp.mobi</p><!--<p class="twitter-link float-right"><a ng-click="redirect('https://twitter.com/DesignMyApp')" href="">@DesignMyApp,</a></p>-->
+          <p class="link float-left">openstreetmap.fr</p><!--<p class="twitter-link float-right"><a ng-click="redirect('https://twitter.com/DesignMyApp')" href="">@DesignMyApp,</a></p>-->
         </div>
 
 
@@ -227,7 +227,7 @@
               <div class="date {{{true: 'with-text', false: ''}[date % 5 == 0 || date == 2015]}} {{{true: 'now', false: ''}[date == 2015]}}" style="left: {{(date-2000)*100/16}}%; width: {{100/16}}%" ng-repeat="date in [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015]">
                 {{{true: date, false: ''}[date % 5 == 0 || date == 2015]}}
               </div>
-               <div class="date-strip" style="left: {{(date-2000)*100/16}}%; width: {{100/14}}%" ng-repeat="date in [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015]">
+               <div class="date-strip" style="left: {{(date-2000)*100/16}}%; width: {{100/16}}%" ng-repeat="date in [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015]">
                 &nbsp;
               </div>
 
