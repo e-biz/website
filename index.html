@@ -2,7 +2,7 @@
 <html lang="en" ng-app="ebizApp">
   <head>
     <meta charset="utf-8">
-    <title>eBiz</title>
+    <title>eBusiness Information</title>
 
     <!-- App css -->
     <link href="css/bootstrap.min.css" rel="stylesheet"/>
@@ -65,8 +65,8 @@
           <div class="reflect"><div>&nbsp;</div></div>
           <div class="centered">
             <div class="text">
-              <div class="ebiz" style="display: none">eBi<span class="biz">z</span></div>
-              <img src="./img/ebusiness.png" alt="" class="ebusiness-logo " style="display: none"/>
+              <div class="ebiz" style="display: none">eBusiness<span class="biz">Information</span></div>
+              <img src="./img/logo-ebusiness.png" alt="" class="ebusiness-logo " style="display: none"/>
               <div class="ebiz-description" style="display: none">Centré sur l'<font class="hand">excellence</font> des compétences et des prestations</div>
             </div>
           </div>
@@ -96,28 +96,52 @@
 
           <div  ng-controller="Links">
            <div id="anchor-top" style="width:0px; height:0px;"></div>
-            <div class="featurette slideIn" ng-click="redirect('http://gatling-tool.org')">
+            <div class="featurette slideIn" ng-click="redirect('http://gatling.io')">
               <img class="featurette-image pull-right" src="./img/gatling.png">
-              <h2 class="featurette-heading">Gatling Tool. <span class="muted">Stress-testez vos applications web.</span></h2>
-              <p class="lead">Gatling est une solution de test haute performance permettant de simuler un grand nombre de clients tout en consommant peu de ressources. Il est Open Source.
-			  <br />
-			  Découvrez notre offre de services sur <a ng-click="redirect(' http://service.gatling-tool.org/')" href="">Gatling Services</a>.
-			  </p>
-              <p class="link">gatling-tool.org</p>
+              <h2 class="featurette-heading">Gatling.io. <span class="muted">Stress-testez vos applications web.</span></h2>
+              <p class="lead">
+                Gatling est une solution de test haute performance permettant de simuler un grand nombre de clients tout en consommant peu de ressources. Il est Open Source, il est utilisé par des dizaines de milliers d'utilisateurs dans le monde entier.
+                <br/>
+                Nos équipes peuvent traiter des besoins spécifiques : organiser des sessions de tir ou coder les scripts, former à l'utilisation avancée de Gatling ou réaliser des modules custom.
+              </p>
+              <!--<br />-->
+              <!--Découvrez notre offre de services sur <a ng-click="redirect(' http://service.gatling-tool.org/')" href="">Gatling Services</a>.-->
+              <p class="link float-left">gatling.io</p><p class="twitter-link float-right with-margin"><a ng-click="redirect('https://twitter.com/gatlingtool')" href="">@GatlingTool</a></p>
             </div>
 			
 			<div class="featurette slideIn" ng-click="redirect('http://designmyapp.mobi')">
-              <img class="featurette-image pull-left designmyapp-image" src="./img/designmyapp.png">
-              <h2 class="featurette-heading">DesignMyApp. <span class="muted">Un clic, une App Android.</span></h2>
-              <p class="lead">Imaginez qu'en quelques minutes vous puissiez créer une application native Android aussi bien pensée que Google Maps.</p>
-			  <p>Imaginez que vous puissiez mixer sur la carte des données spécifiques à votre entreprise avec des données que vous choisissez dans la sphère Open Data.</p>
-			  <p>Imaginez vos discussions avec les interlocuteurs métiers pour les aider à affiner leur stratégie digitale mobile en leur présentant des prototypes Android créés spécialement pour eux en quelques minutes.</p>
-			  <p>C'est possible sur <b>designmyapp.mobi</b>, select, generate & play.</p>
-              <p class="link">designmyapp.mobi</p>
+              <img class="featurette-image pull-left designmyapp-image" src="./img/dma_cube.png">
+              <h2 class="featurette-heading">DesignMyApp. <span class="muted">Un clic, une app mobile ou web.</span></h2>
+              <p class="lead">
+                Vos clients sont uniques. Avec DesignMyApp, vous pourrez proposer à vos clients une App Android, iOS ou web totalement personnalisée car générée et déployée spécialement pour lui. En un clic, ou presque.
+                DesignMyApp invente le concept de l'App jetable à usage unique.
+              </p>
+			        <p>
+                DesignMyApp a été développée par les équipes d'eBiz en utilisant de nombreuses technologies comme Java8, Tomcat8, Spring 4, Spring Boot, Spring MVC, Jackson, Maven 3.3, MongoDB 2.6, Docker 1.6, NPM, Gulp, Bower, AngularJS 1.3, SASS, Node.js, Jenkins ou Sonar.
+              </p>
+
+              <p class="link float-left">designmyapp.mobi</p><p class="twitter-link float-right"><a ng-click="redirect('https://twitter.com/DesignMyApp')" href="">@DesignMyApp</a></p>
             </div>
 
+
+        <div class="featurette slideIn" ng-click="redirect('https://openstreetmap.fr')">
+          <img class="featurette-image pull-right designmyapp-image" src="./img/osm_contributor.png">
+          <h2 class="featurette-heading">OpenStreetMap. <span class="muted">DesignMyApp Map Tools.</span></h2>
+          <p class="lead">
+            OpenStreetMap (OSM) est une alternative open data à Google Maps, Bing et tant d'autres. eBiz apporte son expertise technique pour créer de nouveaux outils pour faciliter l'utilisation d'OSM par des entreprises.
+          </p>
+          <p>Apps de crowdsourcing mobiles, serveurs de tuiles. Visitez <a ng-click="redirect('https://osm.designmyapp.mobi')" href="">osm.designmyapp.mobi</a> et créer via l'outil "Contribuer" une App native Android de contribution en quelques minutes.</p>
+          <p>Génération de tuiles statiques au format MBTiles. Visitez <a ng-click="redirect('https://tiles.designmyapp.mobi')" href="">tiles.designmyapp.mobi</a>.</p>
+          <p>Création de fichiers de points géolocalisés. Visitez <a ng-click="redirect('https://poimanager.designmyapp.mobi')" href="">poimanager.designmyapp.mobi</a>.</p>
+          <p>Nous créons pour nos clients des serveurs de tuiles ou des apps sur mesure grâce à notre maîtrise de OSM et des technologies web et mobiles.</p>
+          <p class="link float-left">openstreetmap.fr</p><!--<p class="twitter-link float-right"><a ng-click="redirect('https://twitter.com/DesignMyApp')" href="">@DesignMyApp,</a></p>-->
+        </div>
+
+
+
+
             <div class="featurette slideIn" ng-click="redirect('http://openparis.org')">
-              <img class="featurette-image pull-right" src="./img/openparis-opencyclo.png">
+              <img class="featurette-image pull-left" src="./img/openparis-opencyclo.png">
               <h2 class="featurette-heading">Mobilité. <span class="muted">App Android, iOS et OpenData.</span></h2>
               <p class="lead">Les technolologies mobiles transforment les usages. Depuis peu, collectivités, états et entreprises libèrent certaines de leurs données : l'OpenData est en marche.</p>
 			  <p>Découvrez <a ng-click="redirect('http://openparis.org', $event)" href="">OpenParis</a>, app gagnante du prix RATP Moov'In The City 2013.<br>
@@ -130,14 +154,14 @@
             </div>
 
             <div class="featurette slideIn" ng-click="redirect('http://androidkickstartr.com/')">
-              <img class="featurette-image pull-left" src="./img/androidkickstartr.png">
+              <img class="featurette-image pull-right" src="./img/androidkickstartr.png">
               <h2 class="featurette-heading">AndroidKickstartR. <span class="muted">Productivité avec Android.</span></h2>
               <p class="lead">AndroidKickstartR permet de créer en 10 secondes une application Android embarquant vos librairies préférées. Votre projet est créé et configuré pour vous. Concentrez-vous uniquement sur le code !</p>
               <p class="link">androidkickstartr.com</p>
             </div>
 
             <div class="featurette slideIn"  ng-click="redirect('http://androidannotations.org/')">
-              <img class="featurette-image pull-right" src="./img/androidannotations.png">
+              <img class="featurette-image pull-left" src="./img/androidannotations.png">
               <h2 class="featurette-heading">AndroidAnnotations. <span class="muted">Développez rapidement, maintenez facilement.</span></h2>
               <p class="lead">AndroidAnnotations est un framework Open Source visant à simplifier et industrialiser les développements Android, sans impacter les performances.</p>
               <p class="link">androidannotations.org</p>
@@ -179,7 +203,7 @@
           <div class="column30 slideIn">
             <p class="slideIn column">
               <i class="icon-group column-head"></i>
-              <span class="logo">eBiz</span><img src="img/ebusiness-mini.png" class="logo"></img>, c'est une équipe d'une <strong>cinquantaine</strong> de femmes et d'hommes, de <strong>moins de 30 ans</strong> de moyenne d'âge, qui réalisent chaque année des projets pour tous types de clients : <strong><i class="icon-building"></i> startups, banques, assurances, telecom, BTP, transport, services</strong>.
+              <img src="img/ebusiness.png" class="logo">, c'est une équipe d'une <strong>cinquantaine</strong> de femmes et d'hommes, de <strong>moins de 30 ans</strong> de moyenne d'âge, qui réalisent chaque année des projets pour tous types de clients : <strong><i class="icon-building"></i> startups, banques, assurances, telecom, BTP, transport, services</strong>.
 
             <p class="slideIn column">
               <i class="icon-heart-empty column-head"></i>
@@ -189,7 +213,7 @@
 
             <p class="slideIn column">
               <i class="icon-thumbs-up column-head"></i>
-              <span class="logo">eBiz</span><img src="img/ebusiness-mini.png" class="logo"></img> est la première société du groupe <a href="http://excilys.com">Excilys</a>, et à ce titre, partage les valeurs du <strong><i class="icon-exchange"></i> service équitable</strong> qu'elle a contribué à mettre en place et qu'elle fait prospérer <strong>chaque jour</strong>.</p>
+              <img src="img/ebusiness.png" class="logo"> est la première société du groupe <a href="http://excilys.com">Excilys</a>, et à ce titre, partage les valeurs du <strong><i class="icon-exchange"></i> service équitable</strong> qu'elle a contribué à mettre en place et qu'elle fait prospérer <strong>chaque jour</strong>.</p>
           </div>
           <div class="clearfix"></div>
 
@@ -200,31 +224,44 @@
 
               <div class="end">&nbsp;</div>
               <div class="start">&nbsp;</div>
-              <div class="date {{{true: 'with-text', false: ''}[date % 5 == 0 || date == 2013]}} {{{true: 'now', false: ''}[date == 2013]}}" style="left: {{(date-2000)*100/14}}%; width: {{100/14}}%" ng-repeat="date in [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013]">
-                {{{true: date, false: ''}[date % 5 == 0 || date == 2013]}}
+              <div class="date {{{true: 'with-text', false: ''}[date % 5 == 0 || date == 2015]}} {{{true: 'now', false: ''}[date == 2015]}}" style="left: {{(date-2000)*100/16}}%; width: {{100/16}}%" ng-repeat="date in [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015]">
+                {{{true: date, false: ''}[date % 5 == 0 || date == 2015]}}
               </div>
-               <div class="date-strip" style="left: {{(date-2000)*100/14}}%; width: {{100/14}}%" ng-repeat="date in [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013]">
+               <div class="date-strip" style="left: {{(date-2000)*100/16}}%; width: {{100/16}}%" ng-repeat="date in [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015]">
                 &nbsp;
               </div>
 
 
-              <div class="text" style="left: {{(1999.84-2000)*100/14}}%; top: 40px;">
+              <div class="text" style="left: {{(1999.84-2000)*100/16}}%; top: 40px;">
                 <div>
-                  Depuis <strong>2000</strong>, <span class="logo">eBiz</span><img src="img/ebusiness-mini.png" class="logo"></img> propose à ses clients des consultants spécialisés dans les technologies Java/JEE et apparentées.
+                  Depuis <strong>2000</strong>, <img src="img/ebusiness.png" class="logo"> propose à ses clients des consultants spécialisés dans les technologies Java/JEE et apparentées.
                 </div>
               </div>
 
-              <div class="text" style="left: {{(2001.84-2000)*100/14}}%; top: 182px;">
+              <div class="text" style="left: {{(2001.84-2000)*100/16}}%; top: 195px;">
                 <div>
-                  <span class="logo">eBiz</span><img src="img/ebusiness-mini.png" class="logo"></img> et Excilys animent depuis <strong>2002</strong> un réseau d'écoles d'ingénieurs dans toute la France en réalisant des séminaires techniques, des formations JEE, Mobilité et Agilité.
+                  <img src="img/ebusiness.png" class="logo"> et Excilys animent depuis <strong>2002</strong> un réseau d'écoles d'ingénieurs dans toute la France en réalisant des séminaires techniques, des formations JEE, Mobilité et Agilité.
                 </div>
               </div>
 
-                <div class="text" style="left: {{(2008.6-2000)*100/14}}%; top: 40px;">
+                <div class="text" style="left: {{(2008.6-2000)*100/16}}%; top: 40px;">
                   <div>
-                    En <strong>2009</strong>, <span class="logo">eBiz</span><img src="img/ebusiness-mini.png" class="logo"></img> a voulu ajouter des projets conséquents à la communauté des développeurs et ainsi apporter sa pierre à l'édifice Open Source. <br />Gatling et AndroidAnnotations ont été les deux premiers projets concrets issus de cette volonté.
+                    En <strong>2009</strong>, <img src="img/ebusiness.png" class="logo"> a voulu ajouter des projets conséquents à la communauté des développeurs et ainsi apporter sa pierre à l'édifice Open Source. <br />Gatling et AndroidAnnotations ont été les deux premiers projets concrets issus de cette volonté.
                   </div>
                 </div>
+
+              <div class="text" style="left: {{(2013.84-2000)*100/16}}%; top: 220px;">
+                <div>
+                  En <strong>2014</strong>, <img src="img/ebusiness.png" class="logo"> devient leader d'un groupe de travail européen sur les Smart City Services au sein de FIcontent puis lance DesignMyApp et le concept de la génération d'app mobiles ou web jetables.
+                </div>
+              </div>
+
+              <div class="text" style="left: {{(2014.84-2000)*100/16}}%; top: 20px;">
+                <div>
+                  En <strong>2015</strong>, Gatling dépasse les 150k téléchargements et se dote d'un nouveau site en .io.<br/>DesignMyApp met sa puissance au service de la contribution dans OpenStreetMap.
+                </div>
+              </div>
+
             </content>
           </div>
 
@@ -240,7 +277,7 @@
             <div class="column30 slideIn">
               <p class="slideIn column">
                <i class="icon-time column-head"></i>
-               <span class="logo">eBiz</span><img src="img/ebusiness-mini.png" class="logo"></img> est bien connue pour son recrutement de jeunes ingénieurs. Durant une période d'intégration de <strong><i class="icon-time"></i> 6 mois</strong>, toutes les technologies orthodoxes <br /><strong><i class="icon-coffee"></i> JEE</strong> et <strong><i class="icon-mobile-phone"></i> Mobiles</strong> sont abordées dans le détail, et chacun décide d'une ou plusieurs spécialisations, y compris dans des technologies qui font le buzz.
+               <img src="img/ebusiness.png" class="logo"> est bien connue pour son recrutement de jeunes ingénieurs. Durant une période d'intégration de <strong><i class="icon-time"></i> 6 mois</strong>, toutes les technologies orthodoxes <br /><strong><i class="icon-coffee"></i> JEE</strong> et <strong><i class="icon-mobile-phone"></i> Mobiles</strong> sont abordées dans le détail, et chacun décide d'une ou plusieurs spécialisations, y compris dans des technologies qui font le buzz.
              </p>
 
               <p class="slideIn column">
@@ -258,11 +295,11 @@
             </div>
 
             <h1 id="anchor-internship">
-              <span><i class="icon-briefcase"></i>Stages 2013</span>
+              <span><i class="icon-briefcase"></i>Stages</span>
             </h1>
 
              <p class="slideIn sidenote">
-                <i class="icon-exclamation-sign icon-gray"></i> eBiz<img src="img/ebusiness-mini-black.png" class="logo"></img> recrute aussi des talents déjà confirmés. Une seule obligation pour postuler : se reconnaître dans son <a href="#anchor-adn" class="smooth-scroll">ADN</a>.
+                <i class="icon-exclamation-sign icon-gray"></i> <img src="img/ebusiness.png" class="logo"> recrute aussi des talents déjà confirmés. Une seule obligation pour postuler : se reconnaître dans son <a href="#anchor-adn" class="smooth-scroll">ADN</a>.
              </p>
 
             <div ng-controller="Internships" id="columns">
@@ -314,9 +351,7 @@
         <br />
 
         <div class="footer-text">
-          <a href="http://www.excilys.com/">Groupe Excilys</a> -
-          <a href="http://blog.excilys.com/">Blog</a> -
-          <a href="http://labs.excilys.com/">Labs</a>
+          <a href="http://www.excilys.com/">Groupe Excilys</a>
         </div>
       </div>
 
@@ -328,12 +363,11 @@
       </div>
 
       <div class="footer-copyright">
-        <a href="#aboutModal" role="button" data-toggle="modal">Mentions Légales</a> - ©2012 eBusiness Information 2000-2013<br />
-        Design et développement par <a href="https://twitter.com/JoanZap">Joan Zapata</a> pour eBusiness Information
+        <a href="#aboutModal" role="button" data-toggle="modal">Mentions Légales</a> - ©2015 eBusiness Information 2000-2015
       </div>
 
 
-      <!-- Adresse postale et mail de contact, lien direct vers les stages, lien vers blog, lien vers labs, lien vers excilys.com, mentions légales, copyright -->
+      <!-- Adresse postale et mail de contact, lien direct vers les stages, lien vers excilys.com, mentions légales, copyright -->
     </div>
 
     <div id="aboutModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
