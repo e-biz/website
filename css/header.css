@@ -106,7 +106,7 @@ header {
 	color: #efefef;
 	line-height: 1.25;
 	width: auto;
-	display: inline;
+  text-align: center;
 }
 
 .header-content {
@@ -133,11 +133,8 @@ header {
 
 .ebusiness-logo {
 	margin-right: 30px;
-	position: relative;
 	width: 180px;
-	left: 16px;
 	top: -20px;
-	display: inline;
 	position: absolute;
 	left: 0px;
 }
@@ -154,5 +151,4 @@ header {
 .header-content .centered .text {
 	position: relative;
 	text-align: left;
-	left: 216px;
 }
