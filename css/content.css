@@ -120,6 +120,18 @@ content .column30 .column-head.highlighted {
   cursor: pointer;
   padding-bottom: 40px;
 }
+.featurette.news {
+  cursor: default;
+}
+
+.featurette.news .float-right.with-margin{
+  margin: 0;
+}
+
+.featurette.news .featurette-heading .muted{
+  font-size: 0.6em;
+}
+
 .featurette-image {
 	width: 260px;
   position: relative;

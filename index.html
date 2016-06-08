@@ -24,7 +24,7 @@
     <link href="./img/favicon.png" rel="icon" type="image/png" />
   </head>
 
-  <body data-spy="scroll"  data-target=".navbar" data-offset="100">
+  <body data-spy="scroll"  data-target=".navbar" data-offset="100" ng-controller="MainCtrl">
 
     <div class="container">
 
@@ -85,22 +85,25 @@
                 <div class="nav-collapse collapse">
                   <ul class="nav">
                     <li>
-                      <a href="#anchor-adn">Nos expertises</a>
+                      <a ng-click="toggleNews(false)" href="#anchor-adn">Nos expertises</a>
                     </li>
                     <li>
-                      <a href="#anchor-top">Nos solutions</a>
+                      <a ng-click="toggleNews(false)" href="#anchor-top">Nos solutions</a>
                     </li>
                     <li>
-                      <a href="#anchor-adn">Notre ADN</a>
+                      <a ng-click="toggleNews(false)" href="#anchor-adn">Notre ADN</a>
                     </li>
                     <li>
-                      <a href="#anchor-pitch">Pitch</a>
+                      <a ng-click="toggleNews(false)" href="#anchor-pitch">Pitch</a>
                     </li>
                     <li>
-                      <a href="#anchor-join">Nous rejoindre</a>
+                      <a ng-click="toggleNews(false)" href="#anchor-join">Nous rejoindre</a>
                     </li>
                     <li>
-                      <a href="#anchor-internship">Stages</a>
+                      <a ng-click="toggleNews(false)" href="#anchor-internship">Stages</a>
+                    </li>
+                    <li>
+                      <a ng-click="toggleNews(true)" href="#anchor-news"><b>Dernières news</b></a>
                     </li>
                   </ul>
                 </div>
@@ -114,229 +117,249 @@
         </a>
       </header>
 
+
+      <content ng-if="viewManager.showNews">
+        <h1 id="anchor-news">
+          <span><i class="icon-envelope"></i> Dernières news</span>
+        </h1>
+        <div>
+          <news></news>
+        </div>
+      </content>
+
+      <content ng-if="!viewManager.showNews">
+
+        <div  ng-controller="LinksCtrl">
+          <div id="anchor-top" style="width:0px; height:0px;"></div>
+          <div class="featurette slideIn" ng-click="redirect('http://gatling.io')">
+            <img class="featurette-image pull-right" src="./img/gatling.png">
+            <h2 class="featurette-heading">Gatling.io. <span class="muted">Stress-testez vos applications web.</span></h2>
+            <p class="lead">
+              Gatling est une solution de test haute performance permettant de simuler un grand nombre de clients tout en consommant peu de ressources. Il est Open Source, il est utilisé par des dizaines de milliers d'utilisateurs dans le monde entier.
+              <br/>
+              La nouvelle version Frontline apporte de nombreuses fonctions : suivi temps réel, stockage, clustering natif, nouvelles statistiques...
+              <br/>
+              Nos équipes peuvent traiter des besoins spécifiques : organiser des sessions de tir ou coder les scripts, former à l'utilisation avancée de Gatling ou réaliser des modules custom.
+            </p>
+            <p class="link float-left">gatling.io</p><p class="twitter-link float-right with-margin"><a ng-click="redirect('https://twitter.com/gatlingtool')" href="">@GatlingTool</a></p>
+          </div>
+
+
+          <div class="featurette slideIn" ng-click="redirect('http://jawg.io')">
+            <img class="featurette-image pull-left designmyapp-image" src="./img/jawg-logo.png" alt="jawg maps logo" />
+            <h2 class="featurette-heading">Jawg maps. Reprenez le contrôle de vos cartes.</h2>
+            <p class="lead">
+              Les cartes sont un enjeu stratégique pour de nombreux SI.
+              <br/>Google Maps est une solution intéressante, mais n'est pas en mesure de répondre à certains de vos intérêts:
+              <br/> • critères de personnalisation
+              <br/> • disponibilité hors-ligne ou en réseau privé
+              <br/> • propriété intellectuelle
+              <br/>Jawg maps, c'est toute la puissance du système de cartes le plus scalable et performant du moment, disponible en Sass, sur serveur dédié, ou on-premises.
+            </p>
+            <p>Cette expertise est aujourd'hui rassemblée dans l'offre <a ng-click="redirect('http://jawg.io', $event)" href="">jawg.io</a>. Serveurs de cartes personnalisées, app mobiles, intégration web.</p>
+            <p class="link float-left">jawg.io</p>
+          </div>
+
+          <div class="featurette slideIn" ng-click="redirect('http://designmyapp.mobi')">
+            <img class="featurette-image pull-right designmyapp-image" src="./img/dma_cube.png">
+            <h2 class="featurette-heading">DesignMyApp. <span class="muted">Un clic, une app mobile ou web.</span></h2>
+            <p class="lead">
+              Vos clients sont uniques. Avec DesignMyApp, vous pourrez proposer à vos clients une App Android, iOS ou web totalement personnalisée car générée et déployée spécialement pour lui. En un clic, ou presque.
+              DesignMyApp invente le concept de l'App jetable à usage unique.
+            </p>
+            <p>
+              DesignMyApp a été développée par les équipes d'eBiz en utilisant de nombreuses technologies comme Java8, Tomcat8, Spring 4, Spring Boot, Spring MVC, Jackson, Maven 3.3, MongoDB 2.6, Docker 1.6, NPM, Gulp, Bower, AngularJS 1.3, SASS, Node.js, Jenkins ou Sonar.
+            </p>
+
+            <p class="link float-left">designmyapp.mobi</p><p class="twitter-link float-right"><a ng-click="redirect('https://twitter.com/DesignMyApp')" href="">@DesignMyApp</a></p>
+          </div>
+
+
+
+
+          <div class="featurette slideIn" ng-click="redirect('http://openparis.org')">
+            <img class="featurette-image pull-left" src="./img/openparis-opencyclo.png">
+            <h2 class="featurette-heading">Mobilité. <span class="muted">App Android, iOS et OpenData.</span></h2>
+            <p class="lead">Les technolologies mobiles transforment les usages. Depuis peu, collectivités, états et entreprises libèrent certaines de leurs données : l'OpenData est en marche.</p>
+            <p>Découvrez <a ng-click="redirect('http://openparis.org', $event)" href="">OpenParis</a>, app gagnante du prix RATP Moov'In The City 2013.<br>
+              Inventer de nouveaux concepts et les mettre en œuvre, c'est facile : de la matière grise, de l'OpenData et du savoir-faire technique.
+            </p>
+            <p>Retrouvez également <a ng-click="redirect('http://opencyclo.org', $event)" href="">OpenCyclo</a>, un exemple d'utilisation des données ouvertes de JCDecaux sur iOS et Android.
+              <br />
+              Disponible sur <a ng-click="redirect('https://play.google.com/store/apps/details?id=com.ebiz.opencyclo.android', $event)" href="">Google Play</a> et sur l'<a ng-click="redirect('https://itunes.apple.com/fr/app/opencyclo/id645447749?mt=8&ign-mpt=uo%3D4', $event)" href="">Apple Store</a> !</p>
+            <p class="link">openparis.org</p>
+          </div>
+
+          <div class="featurette slideIn" ng-click="redirect('http://androidkickstartr.com/')">
+            <img class="featurette-image pull-right" src="./img/androidkickstartr.png">
+            <h2 class="featurette-heading">AndroidKickstartR. <span class="muted">Productivité avec Android.</span></h2>
+            <p class="lead">AndroidKickstartR permet de créer en 10 secondes une application Android embarquant vos librairies préférées. Votre projet est créé et configuré pour vous. Concentrez-vous uniquement sur le code !</p>
+            <p class="link">androidkickstartr.com</p>
+          </div>
+
+          <div class="featurette slideIn"  ng-click="redirect('http://androidannotations.org/')">
+            <img class="featurette-image pull-left" src="./img/androidannotations.png">
+            <h2 class="featurette-heading">AndroidAnnotations. <span class="muted">Développez rapidement, maintenez facilement.</span></h2>
+            <p class="lead">AndroidAnnotations est un framework Open Source visant à simplifier et industrialiser les développements Android, sans impacter les performances.</p>
+            <p class="link">androidannotations.org</p>
+          </div>
+        </div>
+
+        <h1 id="anchor-adn">
+          <span><i class="icon-tint"></i> Notre ADN</span>
+        </h1>
+
+        <p class="slideIn">Que les projets soient Open Source, applications mobiles B2C ou B2B, intranets, ou  infrastructure hautes disponibilités, l'approche nécessite toujours de répondre aux mêmes questions : quelles options structurantes, quelles réponses fonctionnelles, quelles solutions techniques, quelle enveloppe budgétaire et au fond quels moyens humains ?</p>
+
+        <ul class="words slideIn">
+          <li>expertise</li><li>talent</li><li>volontarisme</li><li>éthique</li><li>collaboration</li>
+        </ul>
+
+        <div class="adn slideIn">
+
+          <img src="img/adn.png" alt="ADN" class="slideIn" />
+
+          <div class="box box1 slideIn">
+            <div>&nbsp;</div>
+            <strong>Notre ADN</strong>, ce sont nos consultants, issus d'un processus de sélection et de formation ambitieux qui s'adresse aux plus motivés par les métiers de l'ingénierie Java/JEE/Mobilité.</div>
+
+          <div class="box box2 slideIn">
+            <div>&nbsp;</div>
+            <strong>Notre ADN</strong>, ce sont nos réalisations, c'est à dire les projets de nos clients, les projets Open Source comme Gatling ou AA, les workshops techniques ou les contributions sur nos médias.</div>
+
+          <div class="box box3 slideIn">
+            <div>&nbsp;</div>
+            <strong>Notre ADN</strong> enfin, c'est notre capacité d'écoute du marché, et d'anticipation des besoins des DSI pour qu'elles assurent leur fonction essentielle : accompagner, outiller voire précéder la stratégie métier.</div>
+
+        </div>
+
+
+
+        <h1 id="anchor-pitch">
+          <span><i class="icon-quote-left"></i>Pitch</span>
+        </h1>
+
+        <div class="column30 slideIn">
+          <p class="slideIn column">
+            <i class="icon-group column-head"></i>
+            <img src="img/ebusiness.png" class="logo">, c'est une équipe d'une <strong>cinquantaine</strong> de femmes et d'hommes, de <strong>moins de 30 ans</strong> de moyenne d'âge, qui réalisent chaque année des projets pour tous types de clients : <strong><i class="icon-building"></i> startups, banques, assurances, telecom, BTP, transport, services</strong>.
+
+          <p class="slideIn column">
+            <i class="icon-heart-empty column-head"></i>
+            Ce sont certainement des <strong><i class="icon-laptop"></i> geeks</strong>, mais surtout de vrais <strong><i class="icon-star"></i> professionnels</strong> au service de la réussite des projets.
+            <br />
+            Ils savent manipuler les premières versions de la <strong>stack JEE</strong>, mais aussi, la <strong>stack Typesafe</strong>, les <strong>frameworks Javascript</strong> ou les principales technologies <strong><i class="icon-tablet"></i> mobiles</strong>.
+
+          <p class="slideIn column">
+            <i class="icon-thumbs-up column-head"></i>
+            <img src="img/ebusiness.png" class="logo"> est la première société du groupe <a href="http://excilys.com">Excilys</a>, et à ce titre, partage les valeurs du <strong><i class="icon-exchange"></i> service équitable</strong> qu'elle a contribué à mettre en place et qu'elle fait prospérer <strong>chaque jour</strong>.</p>
+        </div>
+        <div class="clearfix"></div>
+
+      </content>
+
+      <div ng-if="!viewManager.showNews" class="timeline slideIn" ng-controller="TimelineCtrl">
         <content>
 
-          <div  ng-controller="Links">
-           <div id="anchor-top" style="width:0px; height:0px;"></div>
-            <div class="featurette slideIn" ng-click="redirect('http://gatling.io')">
-              <img class="featurette-image pull-right" src="./img/gatling.png">
-              <h2 class="featurette-heading">Gatling.io. <span class="muted">Stress-testez vos applications web.</span></h2>
-              <p class="lead">
-                Gatling est une solution de test haute performance permettant de simuler un grand nombre de clients tout en consommant peu de ressources. Il est Open Source, il est utilisé par des dizaines de milliers d'utilisateurs dans le monde entier.
-                <br/>
-                Nos équipes peuvent traiter des besoins spécifiques : organiser des sessions de tir ou coder les scripts, former à l'utilisation avancée de Gatling ou réaliser des modules custom.
-              </p>
-              <p class="link float-left">gatling.io</p><p class="twitter-link float-right with-margin"><a ng-click="redirect('https://twitter.com/gatlingtool')" href="">@GatlingTool</a></p>
-            </div>
+          <div class="end">&nbsp;</div>
+          <div class="start">&nbsp;</div>
+          <div class="date {{{true: 'with-text', false: ''}[date % 5 == 0 || date == 2016]}} {{{true: 'now', false: ''}[date == 2016]}}" style="left: {{(date-2000)*100/16}}%; width: {{100/16}}%" ng-repeat="date in [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016]">
+            {{{true: date, false: ''}[date % 5 == 0 || date == 2016]}}
+          </div>
+          <div class="date-strip" style="left: {{(date-2000)*100/16}}%; width: {{100/14}}%" ng-repeat="date in [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016]">
+            &nbsp;
+          </div>
 
 
-            <div class="featurette slideIn" ng-click="redirect('http://jawg.io')">
-              <img class="featurette-image pull-left designmyapp-image" src="./img/jawg-logo.png" alt="jawg maps logo" />
-              <h2 class="featurette-heading">Jawg maps. Reprenez le contrôle de vos cartes.</h2>
-              <p class="lead">
-		Les cartes sont un enjeu stratégique pour de nombreux SI. 
-		<br/>Google Maps est une solution intéressante, mais n'est pas en mesure de répondre à certains de vos intérêts:
-		<br/> • critères de personnalisation
-		<br/> • disponibilité hors-ligne ou en réseau privé
-		<br/> • propriété intellectuelle
-		<br/>Jawg maps, c'est toute la puissance du système de cartes le plus scalable et performant du moment, disponible en Sass, sur serveur dédié, ou on-premises.
-              </p>
-              <p>Cette expertise est aujourd'hui rassemblée dans l'offre <a ng-click="redirect('http://jawg.io', $event)" href="">jawg.io</a>. Serveurs de cartes personnalisées, app mobiles, intégration web.</p>
-              <p class="link float-left">jawg.io</p>
-            </div>
-			
-			<div class="featurette slideIn" ng-click="redirect('http://designmyapp.mobi')">
-              <img class="featurette-image pull-right designmyapp-image" src="./img/dma_cube.png">
-              <h2 class="featurette-heading">DesignMyApp. <span class="muted">Un clic, une app mobile ou web.</span></h2>
-              <p class="lead">
-                Vos clients sont uniques. Avec DesignMyApp, vous pourrez proposer à vos clients une App Android, iOS ou web totalement personnalisée car générée et déployée spécialement pour lui. En un clic, ou presque.
-                DesignMyApp invente le concept de l'App jetable à usage unique.
-              </p>
-			        <p>
-                DesignMyApp a été développée par les équipes d'eBiz en utilisant de nombreuses technologies comme Java8, Tomcat8, Spring 4, Spring Boot, Spring MVC, Jackson, Maven 3.3, MongoDB 2.6, Docker 1.6, NPM, Gulp, Bower, AngularJS 1.3, SASS, Node.js, Jenkins ou Sonar.
-              </p>
-
-              <p class="link float-left">designmyapp.mobi</p><p class="twitter-link float-right"><a ng-click="redirect('https://twitter.com/DesignMyApp')" href="">@DesignMyApp</a></p>
-            </div>
-
-
-
-
-            <div class="featurette slideIn" ng-click="redirect('http://openparis.org')">
-              <img class="featurette-image pull-left" src="./img/openparis-opencyclo.png">
-              <h2 class="featurette-heading">Mobilité. <span class="muted">App Android, iOS et OpenData.</span></h2>
-              <p class="lead">Les technolologies mobiles transforment les usages. Depuis peu, collectivités, états et entreprises libèrent certaines de leurs données : l'OpenData est en marche.</p>
-			  <p>Découvrez <a ng-click="redirect('http://openparis.org', $event)" href="">OpenParis</a>, app gagnante du prix RATP Moov'In The City 2013.<br>
-			  Inventer de nouveaux concepts et les mettre en œuvre, c'est facile : de la matière grise, de l'OpenData et du savoir-faire technique.
-			  </p>
-			  <p>Retrouvez également <a ng-click="redirect('http://opencyclo.org', $event)" href="">OpenCyclo</a>, un exemple d'utilisation des données ouvertes de JCDecaux sur iOS et Android.
-			  <br />
-			  Disponible sur <a ng-click="redirect('https://play.google.com/store/apps/details?id=com.ebiz.opencyclo.android', $event)" href="">Google Play</a> et sur l'<a ng-click="redirect('https://itunes.apple.com/fr/app/opencyclo/id645447749?mt=8&ign-mpt=uo%3D4', $event)" href="">Apple Store</a> !</p>
-              <p class="link">openparis.org</p>
-            </div>
-
-            <div class="featurette slideIn" ng-click="redirect('http://androidkickstartr.com/')">
-              <img class="featurette-image pull-right" src="./img/androidkickstartr.png">
-              <h2 class="featurette-heading">AndroidKickstartR. <span class="muted">Productivité avec Android.</span></h2>
-              <p class="lead">AndroidKickstartR permet de créer en 10 secondes une application Android embarquant vos librairies préférées. Votre projet est créé et configuré pour vous. Concentrez-vous uniquement sur le code !</p>
-              <p class="link">androidkickstartr.com</p>
-            </div>
-
-            <div class="featurette slideIn"  ng-click="redirect('http://androidannotations.org/')">
-              <img class="featurette-image pull-left" src="./img/androidannotations.png">
-              <h2 class="featurette-heading">AndroidAnnotations. <span class="muted">Développez rapidement, maintenez facilement.</span></h2>
-              <p class="lead">AndroidAnnotations est un framework Open Source visant à simplifier et industrialiser les développements Android, sans impacter les performances.</p>
-              <p class="link">androidannotations.org</p>
+          <div class="text" style="left: {{(1999.84-2000)*100/16}}%; top: 40px;">
+            <div>
+              Depuis <strong>2000</strong>, <img src="img/ebusiness.png" class="logo"> propose à ses clients des consultants spécialisés dans les technologies Java/JEE et apparentées.
             </div>
           </div>
 
-          <h1 id="anchor-adn">
-            <span><i class="icon-tint"></i> Notre ADN</span>
-          </h1>
-
-          <p class="slideIn">Que les projets soient Open Source, applications mobiles B2C ou B2B, intranets, ou  infrastructure hautes disponibilités, l'approche nécessite toujours de répondre aux mêmes questions : quelles options structurantes, quelles réponses fonctionnelles, quelles solutions techniques, quelle enveloppe budgétaire et au fond quels moyens humains ?</p>
-
-          <ul class="words slideIn">
-            <li>expertise</li><li>talent</li><li>volontarisme</li><li>éthique</li><li>collaboration</li>
-          </ul>
-
-          <div class="adn slideIn">
-
-            <img src="img/adn.png" alt="ADN" class="slideIn" />
-
-            <div class="box box1 slideIn">
-              <div>&nbsp;</div>
-              <strong>Notre ADN</strong>, ce sont nos consultants, issus d'un processus de sélection et de formation ambitieux qui s'adresse aux plus motivés par les métiers de l'ingénierie Java/JEE/Mobilité.</div>
-
-            <div class="box box2 slideIn">
-              <div>&nbsp;</div>
-              <strong>Notre ADN</strong>, ce sont nos réalisations, c'est à dire les projets de nos clients, les projets Open Source comme Gatling ou AA, les workshops techniques ou les contributions sur nos médias.</div>
-
-            <div class="box box3 slideIn">
-              <div>&nbsp;</div>
-              <strong>Notre ADN</strong> enfin, c'est notre capacité d'écoute du marché, et d'anticipation des besoins des DSI pour qu'elles assurent leur fonction essentielle : accompagner, outiller voire précéder la stratégie métier.</div>
-
+          <div class="text" style="left: {{(2001.84-2000)*100/16}}%; top: 225px;">
+            <div>
+              <img src="img/ebusiness.png" class="logo"> et Excilys animent depuis <strong>2002</strong> un réseau d'écoles d'ingénieurs dans toute la France en réalisant des séminaires techniques, des formations JEE, Mobilité et Agilité.
+            </div>
           </div>
 
-          <h1 id="anchor-pitch">
-            <span><i class="icon-quote-left"></i>Pitch</span>
-          </h1>
+          <div class="text" style="left: {{(2008.5-2000)*100/16}}%; top: -2px;">
+            <div>
+              En <strong>2009</strong>, <img src="img/ebusiness.png" class="logo"> a voulu ajouter des projets conséquents à la communauté des développeurs et ainsi apporter sa pierre à l'édifice Open Source. <br />Gatling et AndroidAnnotations ont été les deux premiers projets concrets issus de cette volonté.
+            </div>
+          </div>
+
+          <div class="text with-right-pin" style="left: calc({{(2013.84-2000)*100/16}}% - 320px); top: 230px;">
+            <div>
+              En <strong>2014</strong>, <img src="img/ebusiness.png" class="logo"> devient leader d'un groupe de travail européen sur les Smart City Services au sein de FIcontent puis lance DesignMyApp et le concept de la génération d'app mobiles ou web jetables.
+            </div>
+          </div>
+
+          <div class="text" style="left: {{(2014.84-2000)*100/16}}%; top: 5px;">
+            <div>
+              En <strong>2015</strong>, Gatling dépasse les 150k téléchargements et se dote d'un nouveau site en .io.<br/>DesignMyApp met sa puissance au service de la contribution dans OpenStreetMap.
+            </div>
+          </div>
+
+          <div class="text" style="left: {{(2015.84-2000)*100/16}}%; top: 215px;">
+            <div>
+              En <strong>2016</strong>, Gatling dépasse les 300k téléchargements et lance la version Gatling Frontline. L'offre basée sur OpenStreetMap devient Jawg maps et part à la conquête de son marché.
+            </div>
+          </div>
+
+        </content>
+      </div>
+
+      <content ng-if="!viewManager.showNews">
+
+        <h1 id="anchor-join">
+          <span><i class="icon-signin"></i> Nous rejoindre</span>
+        </h1>
+
+        <div>
+
 
           <div class="column30 slideIn">
             <p class="slideIn column">
-              <i class="icon-group column-head"></i>
-              <img src="img/ebusiness.png" class="logo">, c'est une équipe d'une <strong>cinquantaine</strong> de femmes et d'hommes, de <strong>moins de 30 ans</strong> de moyenne d'âge, qui réalisent chaque année des projets pour tous types de clients : <strong><i class="icon-building"></i> startups, banques, assurances, telecom, BTP, transport, services</strong>.
+              <i class="icon-time column-head"></i>
+              <img src="img/ebusiness.png" class="logo"> est bien connue pour son recrutement de jeunes ingénieurs. Durant une période d'intégration de <strong><i class="icon-time"></i> 6 mois</strong>, toutes les technologies orthodoxes <br /><strong><i class="icon-coffee"></i> JEE</strong> et <strong><i class="icon-mobile-phone"></i> Mobiles</strong> sont abordées dans le détail, et chacun décide d'une ou plusieurs spécialisations, y compris dans des technologies qui font le buzz.
+            </p>
 
             <p class="slideIn column">
-              <i class="icon-heart-empty column-head"></i>
-              Ce sont certainement des <strong><i class="icon-laptop"></i> geeks</strong>, mais surtout de vrais <strong><i class="icon-star"></i> professionnels</strong> au service de la réussite des projets.
-              <br />
-              Ils savent manipuler les premières versions de la <strong>stack JEE</strong>, mais aussi, la <strong>stack Typesafe</strong>, les <strong>frameworks Javascript</strong> ou les principales technologies <strong><i class="icon-tablet"></i> mobiles</strong>.
+              <i class="icon-picture column-head highlighted"></i>
+              Le logement dans une <strong><i class="icon-building"></i> résidence</strong>, le <br /><strong><i class="icon-picture"></i> séjour de ski</strong> organisé par Excilys, la <strong><i class="icon-bookmark"></i> certification OCPJP</strong> achèvent de créer un bon esprit d'équipe.
+            </p>
 
             <p class="slideIn column">
-              <i class="icon-thumbs-up column-head"></i>
-              <img src="img/ebusiness.png" class="logo"> est la première société du groupe <a href="http://excilys.com">Excilys</a>, et à ce titre, partage les valeurs du <strong><i class="icon-exchange"></i> service équitable</strong> qu'elle a contribué à mettre en place et qu'elle fait prospérer <strong>chaque jour</strong>.</p>
+              <i class="icon-envelope-alt column-head"></i>
+              Alors si vous êtes <strong>passionné</strong> des technologies Java/JEE et apparentées, de mobilité ou de technologies utilisées dans nos projets open source, <strong>postulez</strong>.<br /><br /><strong><i class=" icon-bolt"></i> Cassez les codes</strong>, et plutôt qu'un CV et une lettre de motivation classiques, montrez de quoi vous êtes capables, car c'est précisément ce qui intéressera l'équipe.
+            </p>
           </div>
           <div class="clearfix"></div>
 
-          </content>
+        </div>
 
-          <div class="timeline slideIn" ng-controller="Timeline">
-            <content>
+        <h1 id="anchor-internship">
+          <span><i class="icon-briefcase"></i>Stages</span>
+        </h1>
 
-              <div class="end">&nbsp;</div>
-              <div class="start">&nbsp;</div>
-              <div class="date {{{true: 'with-text', false: ''}[date % 5 == 0 || date == 2015]}} {{{true: 'now', false: ''}[date == 2015]}}" style="left: {{(date-2000)*100/16}}%; width: {{100/16}}%" ng-repeat="date in [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015]">
-                {{{true: date, false: ''}[date % 5 == 0 || date == 2015]}}
-              </div>
-               <div class="date-strip" style="left: {{(date-2000)*100/16}}%; width: {{100/14}}%" ng-repeat="date in [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015]">
-                &nbsp;
-              </div>
+        <p class="slideIn sidenote">
+          <i class="icon-exclamation-sign icon-gray"></i> <img src="img/ebusiness.png" class="logo"> recrute aussi des talents déjà confirmés. Une seule obligation pour postuler : se reconnaître dans son <a href="#anchor-adn" class="smooth-scroll">ADN</a>.
+        </p>
 
+        <div ng-controller="InternshipsCtrl" id="columns">
 
-              <div class="text" style="left: {{(1999.84-2000)*100/16}}%; top: 40px;">
-                <div>
-                  Depuis <strong>2000</strong>, <img src="img/ebusiness.png" class="logo"> propose à ses clients des consultants spécialisés dans les technologies Java/JEE et apparentées.
-                </div>
-              </div>
-
-              <div class="text" style="left: {{(2001.84-2000)*100/16}}%; top: 195px;">
-                <div>
-                  <img src="img/ebusiness.png" class="logo"> et Excilys animent depuis <strong>2002</strong> un réseau d'écoles d'ingénieurs dans toute la France en réalisant des séminaires techniques, des formations JEE, Mobilité et Agilité.
-                </div>
-              </div>
-
-                <div class="text" style="left: {{(2008.6-2000)*100/16}}%; top: 40px;">
-                  <div>
-                    En <strong>2009</strong>, <img src="img/ebusiness.png" class="logo"> a voulu ajouter des projets conséquents à la communauté des développeurs et ainsi apporter sa pierre à l'édifice Open Source. <br />Gatling et AndroidAnnotations ont été les deux premiers projets concrets issus de cette volonté.
-                  </div>
-                </div>
-
-              <div class="text" style="left: {{(2013.84-2000)*100/16}}%; top: 220px;">
-                <div>
-                  En <strong>2014</strong>, <img src="img/ebusiness.png" class="logo"> devient leader d'un groupe de travail européen sur les Smart City Services au sein de FIcontent puis lance DesignMyApp et le concept de la génération d'app mobiles ou web jetables.
-                </div>
-              </div>
-
-              <div class="text" style="left: {{(2014.84-2000)*100/16}}%; top: 20px;">
-                <div>
-                  En <strong>2015</strong>, Gatling dépasse les 150k téléchargements et se dote d'un nouveau site en .io.<br/>DesignMyApp met sa puissance au service de la contribution dans OpenStreetMap.
-                </div>
-              </div>
-
-            </content>
+          <div class="internship slideIn" ng-repeat="internship in internships" ng-click="download(internship.pdf)">
+            <div class="internship-head">
+              {{internship.title}}
+            </div>
+            <i class="icon-download-alt"></i>
+            <ul>
+              <li ng-repeat="line in internship.description">{{line}}</li>
+            </ul>
           </div>
 
-          <content>
-
-            <h1 id="anchor-join">
-              <span><i class="icon-signin"></i> Nous rejoindre</span>
-            </h1>
-
-            <div>
-
-
-            <div class="column30 slideIn">
-              <p class="slideIn column">
-               <i class="icon-time column-head"></i>
-               <img src="img/ebusiness.png" class="logo"> est bien connue pour son recrutement de jeunes ingénieurs. Durant une période d'intégration de <strong><i class="icon-time"></i> 6 mois</strong>, toutes les technologies orthodoxes <br /><strong><i class="icon-coffee"></i> JEE</strong> et <strong><i class="icon-mobile-phone"></i> Mobiles</strong> sont abordées dans le détail, et chacun décide d'une ou plusieurs spécialisations, y compris dans des technologies qui font le buzz.
-             </p>
-
-              <p class="slideIn column">
-                <i class="icon-picture column-head highlighted"></i>
-                Le logement dans une <strong><i class="icon-building"></i> résidence</strong>, le <br /><strong><i class="icon-picture"></i> séjour de ski</strong> organisé par Excilys, la <strong><i class="icon-bookmark"></i> certification OCPJP</strong> achèvent de créer un bon esprit d'équipe.
-              </p>
-
-              <p class="slideIn column">
-                <i class="icon-envelope-alt column-head"></i>
-               Alors si vous êtes <strong>passionné</strong> des technologies Java/JEE et apparentées, de mobilité ou de technologies utilisées dans nos projets open source, <strong>postulez</strong>.<br /><br /><strong><i class=" icon-bolt"></i> Cassez les codes</strong>, et plutôt qu'un CV et une lettre de motivation classiques, montrez de quoi vous êtes capables, car c'est précisément ce qui intéressera l'équipe.
-             </p>
-          </div>
-          <div class="clearfix"></div>
-
-            </div>
-
-            <h1 id="anchor-internship">
-              <span><i class="icon-briefcase"></i>Stages</span>
-            </h1>
-
-             <p class="slideIn sidenote">
-                <i class="icon-exclamation-sign icon-gray"></i> <img src="img/ebusiness.png" class="logo"> recrute aussi des talents déjà confirmés. Une seule obligation pour postuler : se reconnaître dans son <a href="#anchor-adn" class="smooth-scroll">ADN</a>.
-             </p>
-
-            <div ng-controller="Internships" id="columns">
-
-              <div class="internship slideIn" ng-repeat="internship in internships" ng-click="download(internship.pdf)">
-                  <div class="internship-head">
-                      {{internship.title}}
-                  </div>
-                  <i class="icon-download-alt"></i>
-                  <ul>
-                    <li ng-repeat="line in internship.description">{{line}}</li>
-                  </ul>
-              </div>
-
-            </div>
+        </div>
 
       </content>
 
@@ -385,7 +408,7 @@
       </div>
 
       <div class="footer-copyright">
-        <a href="#aboutModal" role="button" data-toggle="modal">Mentions Légales</a> - ©2015 eBusiness Information 2000-2015
+        <a href="#aboutModal" role="button" data-toggle="modal">Mentions Légales</a> - ©2016 eBusiness Information 2000-2016
       </div>
 
 
@@ -413,19 +436,25 @@ Toute réclamation quant au contenu de ce site doit être adressée par voie pos
 
     <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
     <script src="js/bootstrap-scrollspy.js"></script>
-    <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular/angular.min.js"></script>
+    <script src="lib/angular/angular-sanitize.min.js"></script>
     <script src="lib/bootstrap/bootstrap.min.js"></script>
 
     <!-- Angular.js -->
     <script src="js/app.js"></script>
     <script src="js/services.js"></script>
-    <script src="js/controllers.js"></script>
+    <!--<script src="js/NewsCtrl.js"></script>-->
+    <script src="js/MainCtrl.js"></script>
+    <script src="js/LinksCtrl.js"></script>
+    <script src="js/TimelineCtrl.js"></script>
+    <script src="js/InternshipsCtrl.js"></script>
     <script src="js/filters.js"></script>
     <script src="js/directives.js"></script>
+    <script src="js/news.directive.js"></script>
 
     <!-- Basic jQuery -->
     <script src="js/jquery/navbar.js"></script>
-    <script src="js/jquery/presentation.js"></script> <!-- Must be last -->
+    <!--<script src="js/jquery/presentation.js"></script> &lt;!&ndash; Must be last &ndash;&gt;-->
 
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

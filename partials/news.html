@@ -1,0 +1,6 @@
+<div id="{{news.anchor}}" class="featurette news slideIn" ng-repeat="news in newsList">
+  <img class="featurette-image" ng-class="{'pull-left': $odd, 'pull-right': $even}" ng-if="news.image!=''" ng-src="{{news.image}}">
+  <h2 class="featurette-heading">{{news.title}}<span class="muted float-right">{{news.date}}</span></h2>
+  <p class="lead" ng-bind-html="news.content"></p>
+  <p class="link float-left" ng-bind-html="news.author"></p><p class="twitter-link float-right with-margin"><a ng-click="redirect(news.partnerLink)" href="" ng-bind-html="news.partnerLink"></a></p>
+</div>

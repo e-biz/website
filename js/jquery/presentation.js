@@ -44,7 +44,7 @@ $(document).ready(function() {
 			});
 
 		setTimeout(reflect, 2000+20000*Math.random());
-	}
+	};
 
 	reflect();
 
@@ -52,7 +52,7 @@ $(document).ready(function() {
 
 	$("#mail-content").focus(function(){
 		$(this).attr("rows", 6);
-	})
+	});
 
 	$("#mail-content").focusout(function(){
 		$(this).attr("rows", 0);
