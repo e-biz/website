@@ -11,6 +11,16 @@ function news() {
       //-------------------------------------------------//
       //--------------- Scope variables -----------------//
       //-------------------------------------------------//
+      
+      scope.redirect = function (url, $event) {
+        if ($event) {
+          if ($event.stopPropagation) $event.stopPropagation();
+          if ($event.preventDefault) $event.preventDefault();
+          $event.cancelBubble = true;
+          $event.returnValue = false;
+        }
+        $window.open(url);
+      };
 
       scope.newsList = [
         {
