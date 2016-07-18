@@ -11,7 +11,7 @@ function news() {
       //-------------------------------------------------//
       //--------------- Scope variables -----------------//
       //-------------------------------------------------//
-      
+
       scope.redirect = function (url, $event) {
         if ($event) {
           if ($event.stopPropagation) $event.stopPropagation();
@@ -23,6 +23,15 @@ function news() {
       };
 
       scope.newsList = [
+        {
+          anchor: 'jawgblog',
+          title: 'jawg.io website',
+          author: 'eBusiness Information',
+          content: 'jawg maps se dote d\'un nouveau site web pour mieux présenter ses offres. Une nouvelle section blog apparaît pour mettre en avant les nouveautés autour de jawg maps.',
+          image: 'img/news/jawg_website.png',
+          date: '07/07/2016',
+          partnerLink: 'https://www.jawg.io/blog/'
+        },
         {
           anchor: 'vivatech',
           title: 'Viva Technology',
