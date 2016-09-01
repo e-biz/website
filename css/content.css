@@ -159,6 +159,13 @@ content .column30 .column-head.highlighted {
   letter-spacing: -1px;
 }
 
+.featurette-anchor {
+  cursor: pointer;
+  vertical-align: middle;
+  margin-left: 10px;
+  font-size: 24px;
+}
+
 .featurette-image {
   transition: all 200ms ease-in-out;
   -moz-transition: all 200ms ease-in-out; /* Firefox 4 */

@@ -1,7 +1,7 @@
 angular.module('ebizApp')
-    .directive('news', [news]);
+    .directive('news', ['$window', news]);
 
-function news() {
+function news($window) {
   return {
     restrict: 'E',
     templateUrl: 'partials/news.html',
@@ -91,7 +91,6 @@ function news() {
       //-------------------------------------------------//
       //------------------- Function --------------------//
       //-------------------------------------------------//
-
 
 
       //-------------------------------------------------//

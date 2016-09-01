@@ -15,7 +15,7 @@ var InternshipsCtrl = function ($scope) {
         "La méthode agile SCRUM"
       ]},
 
-    {title: "Capico Mobile",
+    {title: "App Mobile",
       pdf: "http://www.ebusinessinformation.fr/img/stages2015/REC.StageG3.CAPICO_Android_IPad.2016.T1.1.pdf",
       description: [
         "Outils et normes Java/JEE",
@@ -34,7 +34,7 @@ var InternshipsCtrl = function ($scope) {
         "Diverses librairies Java"
       ]},
 
-    {title: "Capico HTML5, CSS3, AngularJS",
+    {title: "Web App HTML5, CSS3, AngularJS",
       pdf: "http://www.ebusinessinformation.fr/img/stages2015/REC.StageG3.CAPICO_HTML5_CSS3.2016.T1.1.pdf",
       description: [
         "Outils et normes Java/JEE",
