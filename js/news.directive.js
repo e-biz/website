@@ -24,6 +24,15 @@ function news($window) {
 
       scope.newsList = [
         {
+          anchor: 'ovhsummit',
+          title: 'OVH Summit',
+          author: 'eBusiness Information',
+          content: 'eBiz sera doublement présent à l\'OVH Summit 2016 avec un événement triplement french tech OVH / Gatling / Jawg. Inscrivez-vous et venez découvrir un case exceptionnel mettant en oeuvre le meilleur des infrastructures OVH, des serveurs Jawg maps et des injecteurs Gatling Frontline.',
+          image: 'img/news/ovh-summit.png',
+          date: '05/09/2016',
+          partnerLink: 'https://www.ovh.com/fr/events/summit/2016/'
+        },
+        {
           anchor: 'jawgblog',
           title: 'jawg.io website',
           author: 'eBusiness Information',
