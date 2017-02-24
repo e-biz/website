@@ -9,7 +9,6 @@
 	padding-left: 35px;
 }
 
-
 .flow-navbar {
 	position: absolute;
 	bottom: 0px;
@@ -49,6 +48,7 @@
 	-moz-box-shadow: none;
 	box-shadow: none;
 	border-bottom: 5px solid rgba(41, 169, 223, 0.2);
+	background: #00AFEC;
 }
 
 .navbar .nav {
@@ -57,13 +57,15 @@
 }
 .navbar .nav > li {
 	float: none;
-	display: inline-block;	
+	display: inline-block;
 }
 
 /* Not focused not active navbar item */
 .navbar .nav > li > a {
 	text-shadow: none;
-	color: #666;
+	font-size: 0.9em;
+	font-weight: bold;
+	color: #eeeeee;
 	padding: 15px 20px;
 	transition: all 500ms;
 	-moz-transition: all 500ms;
@@ -75,16 +77,16 @@
 
 .navbar .nav > li > a:hover {
 	color: white;
-	background: #29a9df;
-	border-bottom: 5px solid #29a9df;
+	background: #004564;
+	border-bottom: 5px solid #00AFEC;
 }
 
 /* Active navbar item */
 .navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
-	background: white;
+	background: #004564;
 	cursor: default;
-	border-bottom: 5px solid #29a9df;
-	color: #29a9df;
+	border-bottom: 5px solid #00AFEC;
+	color: white;
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
 	box-shadow: none;

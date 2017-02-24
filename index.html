@@ -32,19 +32,8 @@
       ================================================== -->
 
       <header>
-        <div class="header-bg"></div>
         <div class="header-bg-shadow-start transition-color"></div>
-
-        <!-- Top strip -->
-        <div class="header-top-strip" style="display: none;">
-          <div class="header-top-strip-content"></div>
-        </div>
-
-        <!-- Light effect below top strip -->
-        <div class="header-light-effect" style="display: none;">
-          <div class="header-hr"></div>
-        </div>
-
+        <div class="header-bg"></div>
         <!-- Header main content -->
         <div class="header-content">
 
@@ -52,8 +41,8 @@
           <div class="centered">
             <div class="text">
               <div class="ebiz" style="display: none">eBusiness<span class="biz">Information</span></div>
-              <img src="./img/logo-ebusiness.png" alt="" class="ebusiness-logo " style="display: none"/>
-              <div class="ebiz-description" style="display: none">Centré sur l'<font class="hand">excellence</font> des compétences et des prestations</div>
+              <img src="./img/logo-ebusiness.svg" alt="" class="ebusiness-logo " style="display: none"/>
+              <div class="ebiz-description" style="display: none">Les tech-ninjas au service de vos <font class="hand">ambitions</font></div>
             </div>
           </div>
 
@@ -66,22 +55,22 @@
                 <div class="nav-collapse collapse">
                   <ul class="nav">
                     <li>
+                      <a ng-click="toggleNews(false)" href="#anchor-id">Identité</a>
+                    </li>
+                    <li>
+                      <a ng-click="toggleNews(false)" href="#anchor-adn">Notre ADN</a>
+                    </li>
+                    <li>
                       <a ng-click="toggleNews(false)" href="#anchor-adn">Nos expertises</a>
                     </li>
                     <li>
                       <a ng-click="toggleNews(false)" href="#anchor-top">Nos solutions</a>
                     </li>
                     <li>
-                      <a ng-click="toggleNews(false)" href="#anchor-adn">Notre ADN</a>
-                    </li>
-                    <li>
-                      <a ng-click="toggleNews(false)" href="#anchor-pitch">Pitch</a>
-                    </li>
-                    <li>
                       <a ng-click="toggleNews(false)" href="#anchor-join">Nous rejoindre</a>
                     </li>
                     <li>
-                      <a ng-click="toggleNews(false)" href="#anchor-internship">Stages</a>
+                      <a ng-click="toggleNews(false)" href="#anchor-internship">Jobs</a>
                     </li>
                     <li>
                       <a ng-click="toggleNews(true)" href="#anchor-news"><b>Dernières news</b></a>
@@ -109,112 +98,78 @@
       </content>
 
       <content ng-if="!viewManager.showNews">
-
-        <div  ng-controller="LinksCtrl">
-          <div id="anchor-top" style="width:0px; height:0px;"></div>
-          <div class="featurette slideIn" ng-click="redirect('http://gatling.io')">
-            <img class="featurette-image pull-right" src="./img/gatling.png">
-            <h2 class="featurette-heading">Gatling.io. <span class="muted">Stress-testez vos applications web.</span></h2>
-            <p class="lead">
-              Gatling est une solution de test haute performance permettant de simuler un grand nombre de clients tout en consommant peu de ressources. Il est Open Source, il est utilisé par des dizaines de milliers d'utilisateurs dans le monde entier.
-              <br/>
-              La nouvelle version Frontline apporte de nombreuses fonctions : suivi temps réel, stockage, clustering natif, nouvelles statistiques...
-              <br/>
-              Nos équipes peuvent traiter des besoins spécifiques : organiser des sessions de tir ou coder les scripts, former à l'utilisation avancée de Gatling ou réaliser des modules custom.
-            </p>
-            <p class="link float-left">gatling.io</p><p class="twitter-link float-right with-margin"><a ng-click="redirect('https://twitter.com/gatlingtool')" href="">@GatlingTool</a></p>
-          </div>
-
-
-          <div class="featurette slideIn" ng-click="redirect('http://jawg.io')">
-            <img class="featurette-image pull-left designmyapp-image" src="./img/jawg-logo.png" alt="jawg maps logo" />
-            <h2 class="featurette-heading">Jawg maps. Reprenez le contrôle de vos cartes.</h2>
-            <p class="lead">
-              Les cartes sont un enjeu stratégique pour de nombreux SI.
-              <br/>Jawg maps est en mesure de répondre à certains de vos intérêts:
-              <br/> • critères de personnalisation
-              <br/> • disponibilité hors-ligne ou en réseau privé
-              <br/> • propriété intellectuelle
-              <br/>Jawg maps, c'est toute la puissance du système de cartes le plus scalable et performant du moment, disponible en SaaS, sur serveur dédié, ou on-premises.
-            </p>
-            <p>Cette expertise est aujourd'hui rassemblée dans l'offre <a ng-click="redirect('https://jawg.io', $event)" href="">jawg.io</a>. Serveurs de cartes personnalisées, app mobiles, intégration web.</p>
-            <p class="link float-left">jawg.io</p>
-          </div>
-
-          <div class="featurette slideIn" ng-click="redirect('http://designmyapp.mobi')">
-            <img class="featurette-image pull-right designmyapp-image" src="./img/dma_cube.png">
-            <h2 class="featurette-heading">DesignMyApp. <span class="muted">Un clic, une app mobile ou web.</span></h2>
-            <p class="lead">
-              Vos clients sont uniques. Avec DesignMyApp, vous pourrez proposer à vos clients une App Android, iOS ou web totalement personnalisée car générée et déployée spécialement pour lui. En un clic, ou presque.
-              DesignMyApp invente le concept de l'App jetable à usage unique.
+        <div id="anchor-id" class="slideIn who-we-are">
+          <div class="bulb"></div>
+          <h2>Nous réalisons avec vous les projets digitaux qui vous tiennent à coeur.</h2>
+        </div>
+        <p class="slideIn">
+          <br/>Travailler avec nous, c'est...
+          <ul>
+            <li>Avoir envie d'être agile. Pour de vrai.</li>
+            <li>L'assurance d'être entouré de consultants aux exigences techniques sans comparaison.</li>
+            <li>Donner à vos projets la dynamique nécessaire pour atteindre vos objectifs.</li>
+          </ul>
+        </p>
+        <p class="slideIn">
+          Talent et expertise? Mais comment?
+          <br/>
+          Lors de leur arrivée, tous nos ingénieurs suivent le <b>eBiz Training program</b>, un programme intensif de formation d'une durée de 3 mois à plein temps.
+          Notre Chef partage sa recette:
+          <br/>
+          <div class="recipe">
+            eBiz Training
+            <ul>
+              <li>2c.a.s de <strong>Scrum</strong></li>
+              <li>40cl de <strong>Java & co</strong> (JEE, Maven, Spring, Hibernate, Spring MVC, Security, etc...)</li>
+              <li>5cl d'<strong>Android</strong></li>
+              <li>200gr de <strong>Web development</strong> (Angular 1, React, web devt)</li>
+              <li>2 pincées de <strong>load-testing</strong> et <strong>performance tuning</strong> (Gatling, Bottleneck isolation, DB & Kernel Tuning, Profiling, etc...)</li>
+              <li>4 cubes de philosophie <strong>DevOps</strong></li>
+              <li>100gr de <strong>Continuous Delivery</strong> avec Jenkins + Docker</li>
+            </ul>
+            <p>
+            Servir accompagné de <strong>2 Certifications Oracle</strong> Certified <strong>Associate</strong> et Certified <strong>Professional</strong> Java Programmer 8.
             </p>
             <p>
-              DesignMyApp a été développée par les équipes d'eBiz en utilisant de nombreuses technologies comme Java8, Tomcat8, Spring 4, Spring Boot, Spring MVC, Jackson, Maven 3.3, MongoDB 2.6, Docker 1.6, NPM, Gulp, Bower, AngularJS 1.3, SASS, Node.js, Jenkins ou Sonar.
-            </p>
-
-            <p class="link float-left">designmyapp.mobi</p><p class="twitter-link float-right"><a ng-click="redirect('https://twitter.com/DesignMyApp')" href="">@DesignMyApp</a></p>
+            Conseil: combiner le plat avec les conférences et tech-nights organisés en interne, ainsi qu'à l'<strong>eBiz Fedex Day</strong> (Hackathon annuel par équipes).
+          </p>
           </div>
-
-
-
-
-          <div class="featurette slideIn" ng-click="redirect('http://openparis.org')">
-            <img class="featurette-image pull-left" src="./img/openparis-opencyclo.png">
-            <h2 class="featurette-heading">Mobilité. <span class="muted">App Android, iOS et OpenData.</span></h2>
-            <p class="lead">Les technolologies mobiles transforment les usages. Depuis peu, collectivités, états et entreprises libèrent certaines de leurs données : l'OpenData est en marche.</p>
-            <p>Découvrez <a ng-click="redirect('http://openparis.org', $event)" href="">OpenParis</a>, app gagnante du prix RATP Moov'In The City 2013.<br>
-              Inventer de nouveaux concepts et les mettre en œuvre, c'est facile : de la matière grise, de l'OpenData et du savoir-faire technique.
-            </p>
-            <p>Retrouvez également <a ng-click="redirect('http://opencyclo.org', $event)" href="">OpenCyclo</a>, un exemple d'utilisation des données ouvertes de JCDecaux sur iOS et Android.
-              <br />
-              Disponible sur <a ng-click="redirect('https://play.google.com/store/apps/details?id=com.ebiz.opencyclo.android', $event)" href="">Google Play</a> et sur l'<a ng-click="redirect('https://itunes.apple.com/fr/app/opencyclo/id645447749?mt=8&ign-mpt=uo%3D4', $event)" href="">Apple Store</a> !</p>
-            <p class="link">openparis.org</p>
-          </div>
-
-          <div class="featurette slideIn" ng-click="redirect('http://androidkickstartr.com/')">
-            <img class="featurette-image pull-right" src="./img/androidkickstartr.png">
-            <h2 class="featurette-heading">AndroidKickstartR. <span class="muted">Productivité avec Android.</span></h2>
-            <p class="lead">AndroidKickstartR permet de créer en 10 secondes une application Android embarquant vos librairies préférées. Votre projet est créé et configuré pour vous. Concentrez-vous uniquement sur le code !</p>
-            <p class="link">androidkickstartr.com</p>
-          </div>
-
-          <div class="featurette slideIn"  ng-click="redirect('http://androidannotations.org/')">
-            <img class="featurette-image pull-left" src="./img/androidannotations.png">
-            <h2 class="featurette-heading">AndroidAnnotations. <span class="muted">Développez rapidement, maintenez facilement.</span></h2>
-            <p class="lead">AndroidAnnotations est un framework Open Source visant à simplifier et industrialiser les développements Android, sans impacter les performances.</p>
-            <p class="link">androidannotations.org</p>
-          </div>
-        </div>
-
-        <h1 id="anchor-adn">
-          <span><i class="icon-tint"></i> Notre ADN</span>
-        </h1>
-
-        <p class="slideIn">Que les projets soient Open Source, applications mobiles B2C ou B2B, intranets, ou  infrastructure hautes disponibilités, l'approche nécessite toujours de répondre aux mêmes questions : quelles options structurantes, quelles réponses fonctionnelles, quelles solutions techniques, quelle enveloppe budgétaire et au fond quels moyens humains ?</p>
-
+        </p>
         <ul class="words slideIn">
-          <li>expertise</li><li>talent</li><li>volontarisme</li><li>éthique</li><li>collaboration</li>
+          <li>Notre</li><li>&nbsp;&nbsp;ADN</li><li>, en bref</li>
         </ul>
 
         <div class="adn slideIn">
 
           <img src="img/adn.png" alt="ADN" class="slideIn" />
 
+
           <div class="box box1 slideIn">
             <div>&nbsp;</div>
-            <strong>Notre ADN</strong>, ce sont nos consultants, issus d'un processus de sélection et de formation ambitieux qui s'adresse aux plus motivés par les métiers de l'ingénierie Java/JEE/Mobilité.</div>
+            <h3><strong>Cultiver</strong> l'expertise</h3>
+            <br/>Le web est une ligne grande vitesse, et nos consultants le savent.
+            <br/><b>Pour nous</b>, rester à la pointe est un <strong>challenge</strong> relevé sans appréhensions.
+            <br/><b>Pour nos clients</b>, c'est le <b>plaisir</b> d'être <strong>accompagnés</strong> pour miser sur les bonnes technologies.
+          </div>
 
           <div class="box box2 slideIn">
             <div>&nbsp;</div>
-            <strong>Notre ADN</strong>, ce sont nos réalisations, c'est à dire les projets de nos clients, les projets Open Source comme Gatling ou AA, les workshops techniques ou les contributions sur nos médias.</div>
+            <h3>Etre <strong>heureux</strong> dans son travail</h3>
+            <br/>Nous voulons incarner l'<strong>Entreprise 3.0</strong>.
+            <br/>Grâce à laquelle on a <b>envie</b> de se lever le matin.
+            <br/>Avec laquelle nous sommes <strong>fiers</strong> de travailler.
+          </div>
 
           <div class="box box3 slideIn">
             <div>&nbsp;</div>
-            <strong>Notre ADN</strong> enfin, c'est notre capacité d'écoute du marché, et d'anticipation des besoins des DSI pour qu'elles assurent leur fonction essentielle : accompagner, outiller voire précéder la stratégie métier.</div>
+            <h3>S'<strong>épanouir</strong> au quotidien</h3>
+            <br/>eBiz c'est la <strong>volonté</strong> forte de promouvoir l'<strong>humain</strong>, l'agilité, et la <strong>passion</strong> pour son <strong>métier</strong>.
+            <br/>Tout cela au sein de nos projets et ceux de nos clients.
+            <br/>
 
-        </div>
+          </div>
 
-
+<br/>Le résultat? Nos consultants vivent de leur passion, et cela fait toute la différence.
 
         <h1 id="anchor-pitch">
           <span><i class="icon-quote-left"></i>Pitch</span>
@@ -223,6 +178,7 @@
         <div class="column30 slideIn">
           <p class="slideIn column">
             <i class="icon-group column-head"></i>
+
             <img src="img/ebusiness.png" class="logo">, c'est une équipe d'une <strong>cinquantaine</strong> de femmes et d'hommes, de <strong>moins de 30 ans</strong> de moyenne d'âge, qui réalisent chaque année des projets pour tous types de clients : <strong><i class="icon-building"></i> startups, banques, assurances, telecom, BTP, transport, services</strong>.
 
           <p class="slideIn column">
@@ -237,7 +193,49 @@
         </div>
         <div class="clearfix"></div>
 
+        <div ng-controller="LinksCtrl">
+          <div id="anchor-top" style="width:0px; height:0px;"></div>
+          <div class="featurette slideIn" ng-click="redirect('http://gatling.io')">
+            <img class="featurette-image pull-right" src="./img/gatling.png">
+            <h2 class="featurette-heading">Gatling.io. <span class="muted">Stress-testez vos applications web.</span></h2>
+            <p class="lead">
+              Gatling est une solution de test haute performance permettant de simuler un grand nombre de clients tout en consommant peu de ressources. Il est Open Source, il est utilisé par des dizaines de milliers d'utilisateurs dans le monde entier.
+              <br/>
+              La nouvelle version Frontline apporte de nombreuses fonctions : suivi temps réel, stockage, clustering natif, nouvelles statistiques...
+              <br/>
+              Nos équipes peuvent traiter des besoins spécifiques : organiser des sessions de tir ou coder les scripts, former à l'utilisation avancée de Gatling ou réaliser des modules custom.
+            </p>
+            <p class="link float-left">gatling.io</p><p class="twitter-link float-right with-margin"><a ng-click="redirect('https://twitter.com/gatlingtool')" href="">@GatlingTool</a></p>
+          </div>
+
+          <div class="featurette slideIn" ng-click="redirect('http://jawg.io')">
+            <img class="featurette-image pull-left designmyapp-image" src="./img/jawg-logo.png" alt="jawg maps logo" />
+            <h2 class="featurette-heading">Jawg maps. Reprenez le contrôle de vos cartes.</h2>
+            <p class="lead">
+              Les cartes sont un enjeu stratégique pour de nombreux SI.
+              <br/>Jawg maps est la nouvelle startup french-tech du moment. En mesure de fournir la performance des plus grands services de Maps Web, elle répond aussi à certains de vos intérêts:
+              <br/> • critères de personnalisation
+              <br/> • disponibilité hors-ligne ou en réseau privé
+              <br/> • propriété intellectuelle
+              <br/>Jawg maps, c'est toute la puissance du système de cartes le plus scalable et performant du moment, disponible en SaaS, sur serveur dédié, ou on-premises.
+            </p>
+            <p>Cette expertise est aujourd'hui rassemblée dans l'offre <a ng-click="redirect('https://jawg.io', $event)" href="">jawg.io</a>. Serveurs de cartes personnalisées, app mobiles, intégration web.</p>
+            <p class="link float-left">jawg.io</p>
+          </div>
+
+          <div class="featurette slideIn"  ng-click="redirect('http://androidannotations.org/')">
+            <img class="featurette-image pull-left" src="./img/androidannotations.png">
+            <h2 class="featurette-heading">AndroidAnnotations. <span class="muted">Développez rapidement, maintenez facilement.</span></h2>
+            <p class="lead">AndroidAnnotations est un des frameworks Android les plus utilisés au monde. A l'origine porté par nos soins, et Open Source depuis son plus jeune age, il vise à simplifier et industrialiser les développements Android, sans impacter les performances.
+              <br/> Aujourd'hui, AndroidAnnotations est porté et maintenu par sa communauté.
+            </p>
+            <p class="link">androidannotations.org</p>
+          </div>
+        </div>
+
       </content>
+
+
 
       <div ng-if="!viewManager.showNews" class="timeline slideIn" ng-controller="TimelineCtrl">
         <content>
@@ -439,4 +437,4 @@ Toute réclamation quant au contenu de ce site doit être adressée par voie pos
         ga('send', 'pageview');
     </script>
   </body>
-</html> 
+</html>

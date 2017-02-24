@@ -1,7 +1,8 @@
 
 
 header {
-	background: transparent url('../img/background1.jpg') center center;
+	background: #101010; /* Old browsers */
+	/*background: transparent url('../img/ninja-kid.png') no-repeat;*/
 }
 
 .header-bottom-strip {
@@ -14,22 +15,23 @@ header {
 
 .header-bg {
 	position: absolute;
-	opacity:0.92;
+	opacity: 0.5;
 	width: 100%;
 	height: 500px;
-	background: rgb(67,129,183); /* Old browsers */
-	background: -moz-radial-gradient(center, ellipse cover,  rgba(67,129,183,1) 0%, rgba(0,81,149,1) 100%); /* FF3.6+ */
-	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(67,129,183,1)), color-stop(100%,rgba(0,81,149,1))); /* Chrome,Safari4+ */
-	background: -webkit-radial-gradient(center, ellipse cover,  rgba(67,129,183,1) 0%,rgba(0,81,149,1) 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-radial-gradient(center, ellipse cover,  rgba(67,129,183,1) 0%,rgba(0,81,149,1) 100%); /* Opera 12+ */
-	background: -ms-radial-gradient(center, ellipse cover,  rgba(67,129,183,1) 0%,rgba(0,81,149,1) 100%); /* IE10+ */
-	background: radial-gradient(ellipse at center,  rgba(67,129,183,1) 0%,rgba(0,81,149,1) 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4381b7', endColorstr='#005195',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	background: transparent url('../img/ninja-kid.png') no-repeat;
+
+	/*background: -moz-radial-gradient(center, ellipse cover,  rgba(67,129,183,1) 0%, rgba(0,81,149,1) 100%); /* FF3.6+ */
+	/*background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(67,129,183,1)), color-stop(100%,rgba(0,81,149,1))); /* Chrome,Safari4+ */
+	/*background: -webkit-radial-gradient(center, ellipse cover,  rgba(67,129,183,1) 0%,rgba(0,81,149,1) 100%); /* Chrome10+,Safari5.1+ */
+	/*background: -o-radial-gradient(center, ellipse cover,  rgba(67,129,183,1) 0%,rgba(0,81,149,1) 100%); /* Opera 12+ */
+	/*background: -ms-radial-gradient(center, ellipse cover,  rgba(67,129,183,1) 0%,rgba(0,81,149,1) 100%); /* IE10+ */
+	/*background: radial-gradient(ellipse at center,  rgba(67,129,183,1) 0%,rgba(0,81,149,1) 100%); /* W3C */
+	/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4381b7', endColorstr='#005195',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
 .header-bg-shadow-start {
 	position: absolute;
-	opacity:0.95;
+	opacity:0.4;
 	width: 100%;
 	height: 500px;
 	background: black;
@@ -42,45 +44,8 @@ header {
 	background: -o-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* Opera 12+ */
 	background: -ms-radial-gradient(center, ellipse cover,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* IE10+ */
 	background: radial-gradient(ellipse at center,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */	
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
-
-.header-top-strip {
-	z-index: 1;
-	position: absolute;
-	text-align: center;
-	width: 100%;
-	height: 60px;
-	background: -moz-linear-gradient(top,  rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.6) 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.5)), color-stop(100%,rgba(0,0,0,0.6))); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.6) 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.6) 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.6) 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.6) 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80000000', endColorstr='#99000000',GradientType=0 ); /* IE6-9 */
-
-}
-
-.header-top-strip-content {
-	margin: 0px auto;
-	max-width: 1170px;
-	width: 100%;
-	text-align: right;
-	color: white;
-	padding-top: 0.8em;
-}
-
-.header-top-strip-content-right {
-	float: right;
-	padding-top: 0.2em;
-}
-
-.header-top-strip-content-left {
-	float: left;
-	line-height: 1.7;
-	margin-left: 0.5em;
-	color: white;
-}  
 
 .ebiz {
 	font-size: 98px;
